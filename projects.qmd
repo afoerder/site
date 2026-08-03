@@ -1,0 +1,109 @@
+---
+title: ""
+page-layout: full
+---
+
+```{=html}
+<div class="band-narrow">
+  <div class="section-head">Projects</div>
+
+  <p class="lede">Each entry states the problem, what I built, and where the result
+  currently stands. Status labels are literal. Work that is unpublished or in
+  preparation is marked as such, and limitations are stated alongside results.</p>
+</div>
+
+<div class="band-narrow">
+
+  <div class="entry">
+    <span class="entry-label">Under review</span>
+    <h3>Automated classification of fracture junction geometry</h3>
+    <p>REPLACE: two to four sentences. This is the step from detection to a
+    measurable variable. U-Net plus a stacking ensemble over T, Y and X junction
+    types. Say in one sentence why the classes are hard to separate.</p>
+
+    <img src="images/step4-classified.png" alt="Classified junction network">
+
+    <p class="result">Macro F1 0.77 across three junction classes.
+    REPLACE: add the comparator on this line, either inter-annotator agreement or
+    the chance floor. A metric without a reference point is not interpretable.</p>
+
+    <p class="caveat">Under review at JGR: Machine Learning and Computation.
+    Submitted REPLACE-DATE. Not yet accepted.</p>
+
+    <p class="links"><span>Code released on acceptance</span></p>
+  </div>
+
+  <div class="entry">
+    <span class="entry-label">Results in preparation</span>
+    <h3>Cross-planetary transfer learning for landform detection</h3>
+    <p>REPLACE: two to four sentences. Terrestrial periglacial imagery is
+    comparatively label-rich and Mars is not, so the problem is carrying a detector
+    across a large domain gap. Name the adaptation you made and the one design
+    decision a reviewer would question.</p>
+
+    <img src="images/REPLACE-transfer.png" alt="REPLACE">
+
+    <p class="result">Metrics withheld pending publication. The comparison that
+    matters is Mars-only holdout performance against a Mars-from-scratch baseline.
+    REPLACE once released.</p>
+
+    <p class="links">
+      <a href="REPLACE-LPSC-URL">LPSC 2026 abstract 1717</a>
+      <span>Code not yet released</span>
+    </p>
+  </div>
+
+  <div class="entry">
+    <span class="entry-label">In preparation</span>
+    <h3>Predictability limits for a sparse observational record</h3>
+    <p>REPLACE: two to four sentences. Determining whether the modern Mars dust
+    storm catalog can support forecasting at all, before a forecaster is built.
+    Name the union-find collapse from 26 major events to 13 independent episodes
+    as the contested design choice, and say why it is defensible.</p>
+
+    <img src="images/predictability-budget.png" alt="Predictability budget in units of sigma">
+
+    <p class="result">Detecting a precursor at 80% power requires roughly 1.7 to
+    1.8σ. The largest season-controlled effect measured is 0.32σ, one-sided 95%
+    upper limit 0.80σ. Closing that gap by observation would take at least 150 Mars
+    years; the modern record spans about 8.</p>
+
+    <p class="caveat">This is a predictability assessment and not a forecasting
+    system. Every floor statement is scoped to its design. The nulls exclude
+    effects large enough to support prediction for the features and estimands
+    tested; they are not evidence that precursors do not exist.</p>
+
+    <p class="links"><span>Pre-registration and code: Zenodo deposit forthcoming</span></p>
+  </div>
+
+  <div class="entry">
+    <span class="entry-label">In progress</span>
+    <h3>Survey-scale detection deployment</h3>
+    <p>REPLACE: two to four sentences on the engineering, the move toward cloud
+    execution, and what scaling actually broke.</p>
+
+    <img src="images/step2-mask.png" alt="Binary mask across a survey tile">
+
+    <p class="result">Cascade Mask R-CNN, AP50 69.9 ± 0.6.
+    REPLACE: add the comparator here as well.</p>
+
+    <p class="caveat">Train and test splits are made at the tile level, so adjacent
+    tiles from the same image can appear in both. Reported metrics should be read
+    as an upper bound on generalization to unseen scenes.</p>
+
+    <p class="links"><span>Code not yet released</span></p>
+  </div>
+
+  <div class="entry">
+    <span class="entry-label">Public</span>
+    <h3>Verification tooling for LLM-assisted scientific work</h3>
+    <p>REPLACE: two to four sentences. Frame this as infrastructure and not
+    configuration. A verification layer that enforces source checking, blocks
+    unverified claims, and gates destructive operations behind a pre-execution
+    check. Lead with the engineering decisions.</p>
+
+    <p class="links"><a href="REPLACE-URL">Repository</a></p>
+  </div>
+
+</div>
+```

@@ -1,0 +1,42 @@
+---
+title: ""
+page-layout: full
+---
+
+```{=html}
+<div class="band-narrow">
+  <div class="section-head">About</div>
+
+  <div class="prose">
+    <p>REPLACE: the factual frame. PhD candidate in Earth and Planetary Sciences at
+    the University of Tennessee, Knoxville, advised by Dr. Bradley J. Thomson,
+    defending Spring 2027. Where you are based. What you are looking for, stated
+    plainly enough that someone can tell whether to contact you.</p>
+
+    <p>REPLACE: how you came to this work. This is the only paragraph on the site
+    where a personal register is appropriate, and it is worth writing well, because
+    it is what makes a reader remember you rather than your metrics. Keep it short
+    and concrete. Avoid the origin story that starts with looking up at the stars.</p>
+
+    <p>REPLACE: what you are good at beyond the project list. Judgment about when a
+    problem is not a machine learning problem, evaluation design, working with
+    domain scientists who are not ML people. Say it in your own words.</p>
+
+    <p>REPLACE, optional: citizenship or clearance eligibility if you are
+    comfortable stating it publicly. For federal and national lab roles it is a
+    real filter and it costs you nothing to answer in advance.</p>
+  </div>
+</div>
+
+<div class="band-narrow">
+  <div class="section-head">Contact</div>
+  <ul class="linkrow" style="--x:0">
+    <li><a href="mailto:REPLACE@example.com">Email</a></li>
+    <li><a href="cv.pdf">CV (PDF)</a></li>
+    <li><a href="https://github.com/afoerder">GitHub</a></li>
+    <li><a href="REPLACE-SCHOLAR-URL">Google Scholar</a></li>
+    <li><a href="REPLACE-LINKEDIN-URL">LinkedIn</a></li>
+    <li><a href="REPLACE-ORCID-URL">ORCID</a></li>
+  </ul>
+</div>
+```

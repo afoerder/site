@@ -1,0 +1,260 @@
+---
+title: ""
+page-layout: full
+---
+
+```{=html}
+<section class="hero">
+  <canvas class="hero-field" aria-hidden="true"></canvas>
+
+  <div class="hero-inner">
+    <div class="hero-id">
+      <img class="hero-photo" src="images/portrait.jpg" alt="Andrew Foerder">
+      <div>
+        <div class="hero-name">Andrew Foerder</div>
+        <div class="hero-role">PhD candidate · Earth and Planetary Sciences</div>
+      </div>
+    </div>
+
+    <h1 class="hero-claim">I build computer vision pipelines that carry raw orbital imagery from unlabeled archive to statistically defensible measurements.</h1>
+
+    <p class="hero-bio">
+      Machine learning and computer vision for Earth and planetary remote sensing.
+      I work on detection and measurement problems where labeled training data barely
+      exists, and on getting from a model output to a number that survives scrutiny.
+      <strong>Defending Spring 2027 and looking for research and applied scientist
+      roles in Earth observation, geospatial ML, and AI for science.</strong>
+    </p>
+
+    <ul class="linkrow">
+      <li><a href="mailto:REPLACE@example.com">Email</a></li>
+      <li><a href="cv.pdf">CV (PDF)</a></li>
+      <li><a href="https://github.com/afoerder">GitHub</a></li>
+      <li><a href="REPLACE-SCHOLAR-URL">Google Scholar</a></li>
+      <li><a href="REPLACE-LINKEDIN-URL">LinkedIn</a></li>
+      <li><a href="REPLACE-ORCID-URL">ORCID</a></li>
+    </ul>
+  </div>
+
+  <div class="stager">
+    <div class="stage-wrap">
+      <div class="stage-frame">
+        <img class="stage-img is-on" src="images/step1-input.png" alt="Raw HiRISE image tile">
+        <img class="stage-img" src="images/step2-mask.png" alt="Binary mask from U-Net segmentation">
+        <img class="stage-img" src="images/step3-skeleton.png" alt="Morphological skeleton of the fracture network">
+        <img class="stage-img" src="images/step4-classified.png" alt="Classified junction network">
+      </div>
+
+      <ol class="stage-nav">
+        <li class="stage-step is-on" data-i="0" tabindex="0">
+          <span class="s-num">01</span><span class="s-name">Raw HiRISE tile</span>
+          <span class="s-op">Input</span><span class="s-bar"><i></i></span>
+        </li>
+        <li class="stage-step" data-i="1" tabindex="0">
+          <span class="s-num">02</span><span class="s-name">Binary mask</span>
+          <span class="s-op">U-Net segmentation</span><span class="s-bar"><i></i></span>
+        </li>
+        <li class="stage-step" data-i="2" tabindex="0">
+          <span class="s-num">03</span><span class="s-name">Skeleton</span>
+          <span class="s-op">Morphological thinning</span><span class="s-bar"><i></i></span>
+        </li>
+        <li class="stage-step" data-i="3" tabindex="0">
+          <span class="s-num">04</span><span class="s-name">Classified junctions</span>
+          <span class="s-op">Detection and classification</span><span class="s-bar"><i></i></span>
+        </li>
+      </ol>
+    </div>
+
+    <p class="stage-caption">
+      One HiRISE tile through the full pipeline. Green marks correct classifications,
+      orange marks errors against the hand-labeled reference. Stage 04 is zoomed
+      relative to 01 through 03. REPLACE: add the location and the scale across the frame.
+    </p>
+  </div>
+</section>
+
+<div class="band">
+  <div class="section-head">Selected work</div>
+  <div class="cards">
+
+    <div class="card">
+      <img class="card-fig" src="images/step4-classified.png" alt="">
+      <span class="card-status">Under review</span>
+      <h3>Automated classification of fracture junction geometry</h3>
+      <p class="card-line">REPLACE: one sentence on what this does and why it matters, written for someone who has never heard of Mars.</p>
+      <p class="card-metric">Macro F1 0.77 across three junction classes · REPLACE: add comparator</p>
+      <p class="card-links">
+        <a href="projects.html">Details</a>
+        <span>Code on acceptance</span>
+      </p>
+    </div>
+
+    <div class="card">
+      <img class="card-fig" src="images/step1-input.png" alt="">
+      <span class="card-status">Results in preparation</span>
+      <h3>Cross-planetary transfer learning for landform detection</h3>
+      <p class="card-line">REPLACE: one sentence. The claim is generalization across a large domain gap, which is the transferable skill.</p>
+      <p class="card-metric">REPLACE: Mars-only holdout vs. Mars-from-scratch baseline</p>
+      <p class="card-links">
+        <a href="projects.html">Details</a>
+        <a href="REPLACE-LPSC-URL">LPSC 2026</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <img class="card-fig" src="images/predictability-budget.png" alt="">
+      <span class="card-status">In preparation</span>
+      <h3>Predictability limits for a sparse observational record</h3>
+      <p class="card-line">REPLACE: one sentence. Determining whether a forecasting problem is solvable before anyone builds the forecaster.</p>
+      <p class="card-metric">Measured effect 0.32σ against a 1.7σ detection floor</p>
+      <p class="card-links">
+        <a href="projects.html">Details</a>
+        <span>Zenodo forthcoming</span>
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<div class="band-narrow">
+  <div class="section-head">What I work on</div>
+  <div class="prose">
+    <p>REPLACE with two short paragraphs. The first says what problem class you work
+    on, in plain terms a hiring manager can follow. The second says where the
+    difficulty actually lives, in your own words. This is the paragraph that
+    separates you from someone who has trained a detector on a benchmark. Four
+    sentences is plenty.</p>
+  </div>
+</div>
+
+<div class="band-narrow">
+  <div class="section-head">Selected publications</div>
+
+  <div class="pub">
+    <span class="venue">Under review · JGR Machine Learning and Computation</span>
+    <div class="cite">Foerder, A., REPLACE-COAUTHORS. REPLACE-TITLE. Submitted REPLACE-DATE.</div>
+    <p class="plain">REPLACE: one plain-language sentence saying what the paper found.</p>
+  </div>
+
+  <div class="pub">
+    <span class="venue">REPLACE-JOURNAL · 2024</span>
+    <div class="cite">Foerder, A., REPLACE-COAUTHORS. REPLACE-TITLE.</div>
+    <p class="plain">REPLACE: one plain-language sentence saying what the paper found.</p>
+  </div>
+
+  <p class="meta" style="margin-top:1.5rem"><a href="publications.html">Full publication list</a></p>
+</div>
+
+<script type="module">
+const cv = document.querySelector('.hero-field');
+const hero = document.querySelector('.hero');
+if (cv && hero) {
+  const ctx = cv.getContext('2d');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W = 0, H = 0, pts = [], vel = [], V = null;
+  const dpr = Math.min(devicePixelRatio || 1, 2);
+
+  try {
+    const m = await import('https://cdn.jsdelivr.net/npm/d3-delaunay@6/+esm');
+    V = m.Delaunay;
+  } catch (e) { V = null; }
+
+  function seed() {
+    const r = hero.getBoundingClientRect();
+    W = r.width; H = r.height;
+    cv.width = W * dpr; cv.height = H * dpr;
+    cv.style.width = W + 'px'; cv.style.height = H + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const n = Math.max(60, Math.round(W * H / 13000));
+    pts = []; vel = [];
+    for (let i = 0; i < n; i++) {
+      pts.push([Math.random() * W, Math.random() * H]);
+      vel.push([(Math.random() - 0.5) * 0.12, (Math.random() - 0.5) * 0.12]);
+    }
+  }
+
+  function drawVoronoi() {
+    const d = V.from(pts), v = d.voronoi([0, 0, W, H]);
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = 'rgba(63,208,124,0.16)';
+    ctx.beginPath(); v.render(ctx); ctx.stroke();
+    const cc = v.circumcenters;
+    for (let i = 0; i < cc.length; i += 2) {
+      const x = cc[i], y = cc[i + 1];
+      if (x < 0 || y < 0 || x > W || y > H) continue;
+      const hot = (i / 2) % 13 === 0;
+      ctx.fillStyle = hot ? 'rgba(224,138,50,0.75)' : 'rgba(63,208,124,0.30)';
+      ctx.beginPath(); ctx.arc(x, y, hot ? 2 : 1.1, 0, 6.2832); ctx.fill();
+    }
+  }
+
+  function drawFallback() {
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = 'rgba(63,208,124,0.13)';
+    ctx.beginPath();
+    for (let i = 0; i < pts.length; i++) {
+      const d = [];
+      for (let j = 0; j < pts.length; j++) {
+        if (i === j) continue;
+        const dx = pts[i][0] - pts[j][0], dy = pts[i][1] - pts[j][1];
+        d.push([dx * dx + dy * dy, j]);
+      }
+      d.sort((a, b) => a[0] - b[0]);
+      for (let k = 0; k < 3; k++) {
+        ctx.moveTo(pts[i][0], pts[i][1]);
+        ctx.lineTo(pts[d[k][1]][0], pts[d[k][1]][1]);
+      }
+    }
+    ctx.stroke();
+    for (let i = 0; i < pts.length; i++) {
+      const hot = i % 13 === 0;
+      ctx.fillStyle = hot ? 'rgba(224,138,50,0.75)' : 'rgba(63,208,124,0.30)';
+      ctx.beginPath(); ctx.arc(pts[i][0], pts[i][1], hot ? 2 : 1.1, 0, 6.2832); ctx.fill();
+    }
+  }
+
+  function draw() { ctx.clearRect(0, 0, W, H); V ? drawVoronoi() : drawFallback(); }
+
+  function step() {
+    for (let i = 0; i < pts.length; i++) {
+      pts[i][0] += vel[i][0]; pts[i][1] += vel[i][1];
+      if (pts[i][0] < 0 || pts[i][0] > W) vel[i][0] *= -1;
+      if (pts[i][1] < 0 || pts[i][1] > H) vel[i][1] *= -1;
+    }
+    draw();
+    requestAnimationFrame(step);
+  }
+
+  seed(); draw();
+  if (!reduce) requestAnimationFrame(step);
+  let t;
+  addEventListener('resize', () => { clearTimeout(t); t = setTimeout(() => { seed(); draw(); }, 200); });
+}
+</script>
+
+<script>
+(function () {
+  var imgs = document.querySelectorAll('.stage-img');
+  var steps = document.querySelectorAll('.stage-step');
+  var i = 0, timer = null;
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function show(n) {
+    i = n;
+    imgs.forEach(function (el, k) { el.classList.toggle('is-on', k === n); });
+    steps.forEach(function (el, k) { el.classList.toggle('is-on', k === n); });
+  }
+  function play() { if (!reduce && !timer) timer = setInterval(function () { show((i + 1) % imgs.length); }, 2600); }
+  function stop() { clearInterval(timer); timer = null; }
+
+  steps.forEach(function (el) {
+    el.addEventListener('mouseenter', function () { stop(); show(+el.dataset.i); });
+    el.addEventListener('click', function () { stop(); show(+el.dataset.i); });
+    el.addEventListener('focus', function () { stop(); show(+el.dataset.i); });
+  });
+  var wrap = document.querySelector('.stager');
+  if (wrap) wrap.addEventListener('mouseleave', play);
+  play();
+})();
+</script>
+```

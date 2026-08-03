@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Andrew Foerder"
+  description: "Computer vision pipelines for Earth and planetary remote sensing."
+  site-url: "https://REPLACE-WITH-YOUR-DOMAIN"
+  navbar:
+    logo: ""
+    left:
+      - href: index.qmd
+        text: "Home"
+      - href: projects.qmd
+        text: "Projects"
+      - href: publications.qmd
+        text: "Publications"
+      - href: about.qmd
+        text: "About"
+    right:
+      - icon: github
+        href: https://github.com/afoerder
+        aria-label: GitHub
+  page-footer:
+    left: "Last updated {{< meta date-modified >}}"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme: [cosmo, theme.scss]
+    toc: false
+    anchor-sections: false
+    link-external-newwindow: true
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
