@@ -4,11 +4,14 @@ page-layout: full
 ---
 
 ```{=html}
-<div class="band-narrow">
-  <div class="section-head">Projects</div>
-  <p class="lede">Each entry states the problem, what I built, and where the result
-  currently stands. Status labels are literal. Work that is unpublished or in
-  preparation is marked as such, and limitations are stated alongside results.</p>
+<div class="page-head">
+  <div class="page-head-inner">
+    <div class="kicker">Projects</div>
+    <h1>What I have built</h1>
+    <p>Each entry states the problem, what I built, and where the result currently
+    stands. Status labels are literal. Work that is unpublished or in preparation is
+    marked as such, and limitations are stated alongside results.</p>
+  </div>
 </div>
 
 <div class="band-narrow">

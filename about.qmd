@@ -4,17 +4,27 @@ page-layout: full
 ---
 
 ```{=html}
-<div class="band-narrow">
-  <div class="section-head">About</div>
+<div class="page-head">
+  <div class="page-head-inner">
+    <div class="kicker">About</div>
+    <h1>Andrew Foerder</h1>
+    <p>Machine learning and computer vision for Earth and planetary remote sensing.
+    Based in Boulder, Colorado.</p>
+  </div>
+</div>
+
+<div class="split">
 
   <div class="prose">
     <p>I am a PhD candidate in Earth and Planetary Sciences at the University of
     Tennessee, Knoxville, advised by Dr. Bradley J. Thomson, defending Spring 2027.
-    I work from Boulder, Colorado. I am looking for applied and research scientist
-    roles in Earth observation, geospatial machine learning, and AI for science.</p>
+    I am looking for applied and research scientist roles in Earth observation,
+    geospatial machine learning, and AI for science.</p>
 
     <p>[REPLACE after reading: this is a draft of your origin in my words; rewrite
-    it in yours.] I came to machine learning from the geology side. I went to the
+    it in yours.] I came to machine learning from the geology side. My earlier work
+    was Antarctic geochemistry, using the McMurdo Dry Valleys as a Mars analogue,
+    which meant a lot of careful measurement of samples one at a time. I went to the
     NASA SMD AI/ML workshop in 2024, saw what these methods could do on problems I
     already cared about, and rebuilt my dissertation around them. Most of what I
     know about deep learning I taught myself in the two years since, working on a
@@ -26,8 +36,9 @@ page-layout: full
     to my own field, and researchers outside it come to me for it: I have recently
     been helping a paleobiology group apply machine learning to their data
     [REPLACE: adjust the verb to match reality], and I work regularly with domain
-    experts and collaborators outside academia who are not machine learning people.
-    I am good at explaining novel technical work in approachable language, at
+    experts and collaborators outside academia who are not machine learning people.</p>
+
+    <p>I am good at explaining novel technical work in approachable language, at
     framing why a problem matters to people who do not already work on it, and at
     making the case for a direction to the people who decide whether it gets
     resourced. I have also led junior contributors on technical work.</p>
@@ -40,20 +51,38 @@ page-layout: full
     my work has been establishing that a question was not answerable with the data
     available, which is a less satisfying result to report and a more useful one
     to have.</p>
-
-    <p class="meta">U.S. citizen, eligible to obtain a security clearance.</p>
   </div>
-</div>
 
-<div class="band-narrow">
-  <div class="section-head">Contact</div>
-  <ul class="linkrow">
-    <li><a href="mailto:REPLACE@example.com">Email</a></li>
-    <li><a href="cv.pdf">CV (PDF)</a></li>
-    <li><a href="https://github.com/afoerder">GitHub</a></li>
-    <li><a href="https://scholar.google.com/citations?user=LkSwiQIAAAAJ&hl=en">Google Scholar</a></li>
-    <li><a href="https://www.linkedin.com/in/andrew-foerder-79a830b0">LinkedIn</a></li>
-    <li><a href="https://orcid.org/0009-0001-4430-0844">ORCID</a></li>
-  </ul>
+  <div class="rail">
+    <h4>Education</h4>
+    <ul>
+      <li>Ph.D. Earth, Environmental, and Planetary Sciences<br>
+        <span class="sub">University of Tennessee, Knoxville · in progress</span></li>
+      <li>M.S. Planetary Geology<br>
+        <span class="sub">University of Hawai'i at Mānoa</span></li>
+      <li>B.S. Geology-Biology<br>
+        <span class="sub">Brown University</span></li>
+    </ul>
+
+    <h4>Previously</h4>
+    <ul>
+      <li>Researcher, Tolbert Group<br>
+        <span class="sub">CIRES, University of Colorado Boulder</span></li>
+    </ul>
+
+    <h4>Eligibility</h4>
+    <p class="sub">U.S. citizen, eligible to obtain a security clearance.</p>
+
+    <h4>Elsewhere</h4>
+    <ul class="linkrow" style="flex-direction:column; align-items:flex-start; gap:0.4rem;">
+      <li><a href="mailto:REPLACE@example.com">Email</a></li>
+      <li><a href="cv.pdf">CV (PDF)</a></li>
+      <li><a href="https://github.com/afoerder">GitHub</a></li>
+      <li><a href="https://scholar.google.com/citations?user=LkSwiQIAAAAJ&hl=en">Google Scholar</a></li>
+      <li><a href="https://www.linkedin.com/in/andrew-foerder-79a830b0">LinkedIn</a></li>
+      <li><a href="https://orcid.org/0009-0001-4430-0844">ORCID</a></li>
+    </ul>
+  </div>
+
 </div>
 ```
