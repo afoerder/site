@@ -16,13 +16,8 @@ page-layout: full
 
   <div class="pub">
     <span class="venue">Under review · JGR Machine Learning and Computation</span>
-    <div class="cite">Foerder, A., REPLACE-COAUTHORS. REPLACE-TITLE. Submitted REPLACE-DATE.</div>
-    <p class="plain">REPLACE: one plain-language sentence saying what the paper found.</p>
-  </div>
-
-  <div class="pub">
-    <span class="venue">REPLACE-JOURNAL · 2025</span>
-    <div class="cite">REPLACE-AUTHORS. REPLACE-TITLE. <a href="REPLACE-DOI-URL">DOI</a></div>
+    <div class="cite">Foerder, A. B., with Magocs, Bhidya, and Thomson
+    [REPLACE: verify author order]. REPLACE-TITLE. Submitted April 2026.</div>
     <p class="plain">REPLACE: one plain-language sentence saying what the paper found.</p>
   </div>
 
@@ -37,9 +32,15 @@ page-layout: full
   <div class="section-head">Conference abstracts</div>
 
   <div class="pub">
-    <span class="venue">LPSC 2026 · Abstract 1717</span>
-    <div class="cite">Foerder, A., REPLACE-COAUTHORS. REPLACE-TITLE. 57th Lunar and Planetary Science Conference. <a href="REPLACE-URL">PDF</a></div>
-    <p class="plain">REPLACE: one plain-language sentence.</p>
+    <span class="venue">LPSC 2026 · Abstract 1717 · Poster</span>
+    <div class="cite">Foerder, A. B., Thomson, B. J., Magocs, B. L.
+    Earth-to-Mars Transfer Learning: A Novel Method for the Automatic Detection of
+    Volatile-Influenced Landforms on Mars. 57th Lunar and Planetary Science
+    Conference.
+    <a href="https://www.hou.usra.edu/meetings/lpsc2026/pdf/1717.pdf">PDF</a></div>
+    <p class="plain">We trained a vision model on Earth landforms and carried it to
+    Mars, applying terrestrial analogy digitally to constrain how these features
+    formed and what they record about past climate.</p>
   </div>
 
   <div class="pub">
@@ -48,22 +49,3 @@ page-layout: full
   </div>
 </div>
 ```
-
-<!--
-Long term, drive this page from BibTeX instead of hand-writing entries. Replace
-the front matter with:
-
-  ---
-  title: "Publications"
-  bibliography: references.bib
-  nocite: |
-    @*
-  ---
-
-  ## References
-  ::: {#refs}
-  :::
-
-That auto-formats and auto-sorts, though you lose the plain-language summary
-lines, which are the most valuable part of this page for a non-specialist reader.
--->

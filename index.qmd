@@ -12,17 +12,18 @@ page-layout: full
       <img class="hero-photo" src="images/portrait.jpg" alt="Andrew Foerder">
       <div>
         <div class="hero-name">Andrew Foerder</div>
-        <div class="hero-role">PhD candidate · Earth and Planetary Sciences</div>
+        <div class="hero-role">Machine learning · Earth and planetary remote sensing</div>
       </div>
     </div>
 
-    <h1 class="hero-claim">I build computer vision pipelines that carry raw orbital imagery from unlabeled archive to statistically defensible measurements.</h1>
+    <h1 class="hero-claim">I turn orbital imagery into numbers you can trust.</h1>
+
+    <p class="hero-lede">Computer vision for detection and measurement problems
+    where the labels do not exist yet.</p>
 
     <p class="hero-bio">
-      Machine learning and computer vision for Earth and planetary remote sensing.
-      I work on detection and measurement problems where labeled training data barely
-      exists, and on getting from a model output to a number that survives scrutiny.
-      <strong>Defending Spring 2027 and looking for research and applied scientist
+      My work is getting from a model output to a number that survives scrutiny.
+      <strong>Defending Spring 2027 and looking for applied and research scientist
       roles in Earth observation, geospatial ML, and AI for science.</strong>
     </p>
 
@@ -30,9 +31,9 @@ page-layout: full
       <li><a href="mailto:REPLACE@example.com">Email</a></li>
       <li><a href="cv.pdf">CV (PDF)</a></li>
       <li><a href="https://github.com/afoerder">GitHub</a></li>
-      <li><a href="REPLACE-SCHOLAR-URL">Google Scholar</a></li>
-      <li><a href="REPLACE-LINKEDIN-URL">LinkedIn</a></li>
-      <li><a href="REPLACE-ORCID-URL">ORCID</a></li>
+      <li><a href="https://scholar.google.com/citations?user=LkSwiQIAAAAJ&hl=en">Google Scholar</a></li>
+      <li><a href="https://www.linkedin.com/in/andrew-foerder-79a830b0">LinkedIn</a></li>
+      <li><a href="https://orcid.org/0009-0001-4430-0844">ORCID</a></li>
     </ul>
   </div>
 
@@ -68,7 +69,8 @@ page-layout: full
     <p class="stage-caption">
       One HiRISE tile through the full pipeline. Green marks correct classifications,
       orange marks errors against the hand-labeled reference. Stage 04 is zoomed
-      relative to 01 through 03. REPLACE: add the location and the scale across the frame.
+      relative to 01 through 03. HiRISE imagery: NASA/JPL/University of Arizona.
+      REPLACE: add the location and the scale across the frame.
     </p>
   </div>
 </section>
@@ -79,10 +81,12 @@ page-layout: full
 
     <div class="card">
       <img class="card-fig" src="images/step4-classified.png" alt="">
-      <span class="card-status">Under review</span>
-      <h3>Automated classification of fracture junction geometry</h3>
-      <p class="card-line">REPLACE: one sentence on what this does and why it matters, written for someone who has never heard of Mars.</p>
-      <p class="card-metric">Macro F1 0.77 across three junction classes · REPLACE: add comparator</p>
+      <span class="card-status">Under review · scale-up in progress</span>
+      <h3>From raw HiRISE tiles to measured landforms</h3>
+      <p class="card-line">REPLACE: one sentence a non-specialist can follow. An
+      end-to-end pipeline that detects surface features in orbital images, then
+      measures their geometry as a quantitative variable.</p>
+      <p class="card-metric">Junction classification macro F1 0.77 · TCP detection AP50 69.9 ± 0.6</p>
       <p class="card-links">
         <a href="projects.html">Details</a>
         <span>Code on acceptance</span>
@@ -92,21 +96,24 @@ page-layout: full
     <div class="card">
       <img class="card-fig" src="images/step1-input.png" alt="">
       <span class="card-status">Results in preparation</span>
-      <h3>Cross-planetary transfer learning for landform detection</h3>
-      <p class="card-line">REPLACE: one sentence. The claim is generalization across a large domain gap, which is the transferable skill.</p>
+      <h3>Training on Earth, deploying on Mars</h3>
+      <p class="card-line">REPLACE: one sentence. Carrying a detector across one of
+      the largest domain gaps available, from a label-rich terrestrial analogue to
+      a planet with no labeled data at all.</p>
       <p class="card-metric">REPLACE: Mars-only holdout vs. Mars-from-scratch baseline</p>
       <p class="card-links">
         <a href="projects.html">Details</a>
-        <a href="REPLACE-LPSC-URL">LPSC 2026</a>
+        <a href="https://www.hou.usra.edu/meetings/lpsc2026/pdf/1717.pdf">LPSC 2026</a>
       </p>
     </div>
 
     <div class="card">
       <img class="card-fig" src="images/predictability-budget.png" alt="">
       <span class="card-status">In preparation</span>
-      <h3>Predictability limits for a sparse observational record</h3>
-      <p class="card-line">REPLACE: one sentence. Determining whether a forecasting problem is solvable before anyone builds the forecaster.</p>
-      <p class="card-metric">Measured effect 0.32σ against a 1.7σ detection floor</p>
+      <h3>Knowing what a record cannot tell you</h3>
+      <p class="card-line">REPLACE: one sentence. Establishing whether a forecasting
+      problem is solvable at all, before anyone spends years building the forecaster.</p>
+      <p class="card-metric">Measured effects ≤ 0.32σ against a ~1.7σ floor for this record and design</p>
       <p class="card-links">
         <a href="projects.html">Details</a>
         <span>Zenodo forthcoming</span>
@@ -117,13 +124,49 @@ page-layout: full
 </div>
 
 <div class="band-narrow">
-  <div class="section-head">What I work on</div>
+  <div class="section-head">How I work</div>
   <div class="prose">
-    <p>REPLACE with two short paragraphs. The first says what problem class you work
-    on, in plain terms a hiring manager can follow. The second says where the
-    difficulty actually lives, in your own words. This is the paragraph that
-    separates you from someone who has trained a detector on a benchmark. Four
-    sentences is plenty.</p>
+    <p>I audit for leakage before I trust a number. I have found it in my own work
+    twice: once in a train and evaluation split that forced a full rebuild and
+    re-evaluation of an eight-method model stack, and once mid-run, when a check
+    showed a portion of rows were reading atmospheric data from after the event
+    being predicted. That run was killed before any result was read, so the fix and
+    the added robustness tests are provably not post hoc.</p>
+
+    <p>Where the design allows it, I pre-register. Methods and decision thresholds
+    are committed to version control before the run they govern, so the commit
+    history itself is the evidence that nothing was decided after seeing the
+    numbers. I run power analysis before I model, so I know what effect size a
+    study of a given design could detect at all.</p>
+
+    <p>I verify changes instead of assuming them. When I replaced a full-image
+    decode with a windowed read, I wrote a parity test proving the new path produced
+    identical output before merging it. A model that ships in my pipeline carries a
+    provenance record with its training row counts and a numerical parity check.
+    I report error bars, and I state limitations alongside results here and in my
+    papers.</p>
+  </div>
+</div>
+
+<div class="band-narrow">
+  <div class="section-head">What I use</div>
+  <div class="prose skills">
+    <p class="skill-lead">I build and train detection and segmentation models,
+    including writing architectures and loss functions from scratch when the
+    standard ones fail on badly imbalanced data.</p>
+    <p class="skill-list">PyTorch · U-Net and U-Net++ · Mask R-CNN (Detectron2) · SAM · DINOv3</p>
+
+    <p class="skill-lead">I design the evaluation before the model, and I verify a
+    result before I trust it.</p>
+    <p class="skill-list">scikit-learn · XGBoost · nested and grouped cross-validation · probability calibration · power analysis · leakage detection</p>
+
+    <p class="skill-lead">I work with large orbital image archives, streaming and
+    processing them in place instead of downloading them whole.</p>
+    <p class="skill-list">rasterio and Cloud-Optimized GeoTIFF · NASA PDS STAC · scikit-image · HiRISE and CTX</p>
+
+    <p class="skill-lead">I take pipelines off a laptop and onto a GPU fleet, with
+    cost controls that survive an unattended run.</p>
+    <p class="skill-list">AWS Batch GPU Spot · Docker (multi-stage CUDA) · GCP Vertex AI · S3 · Optuna</p>
   </div>
 </div>
 
@@ -132,7 +175,7 @@ page-layout: full
 
   <div class="pub">
     <span class="venue">Under review · JGR Machine Learning and Computation</span>
-    <div class="cite">Foerder, A., REPLACE-COAUTHORS. REPLACE-TITLE. Submitted REPLACE-DATE.</div>
+    <div class="cite">Foerder, A. B., with Magocs, Bhidya, and Thomson [REPLACE: verify author order]. REPLACE-TITLE. Submitted April 2026.</div>
     <p class="plain">REPLACE: one plain-language sentence saying what the paper found.</p>
   </div>
 
