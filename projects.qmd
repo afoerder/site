@@ -14,6 +14,8 @@ page-layout: full
   </div>
 </div>
 
+<div class="sheet">
+
 <div class="band-narrow">
 
   <div class="entry">
@@ -50,17 +52,26 @@ page-layout: full
   <div class="entry">
     <span class="entry-label">Results in preparation</span>
     <h3>Training on Earth, deploying on Mars</h3>
-    <p>REPLACE: two to four sentences. Terrestrial periglacial imagery is
-    comparatively label-rich and Mars is not, so the problem is carrying a detector
-    across a large domain gap. Name the adaptation you made and the one design
-    decision a reviewer would question.</p>
+    <p>Can an AI vision model trained only on orbital Earth images identify similar
+    landforms on Mars? Geologists have reasoned by terrestrial analogy for decades;
+    this asks whether the analogy survives being made computational. I trained
+    segmentation models on three Earth landform classes, arctic tundra polygons and
+    two classes of desert channel network [REPLACE: name the two], and evaluated them
+    on Mars orbital imagery, asking where the analogy held and what, if anything,
+    still had to come from Mars.</p>
+
+    <p>The analogy carried real signal for some landforms and hit a resolution floor
+    for others. That boundary is the useful part of the result: it says which
+    terrestrial training data is worth collecting for a given target and which is not.
+    REPLACE: name which landforms fell on which side, and the one design decision a
+    reviewer would question.</p>
 
     <img src="images/REPLACE-transfer.png" alt="REPLACE">
 
-    <p class="result">Metrics withheld pending publication. For scale of the
-    problem: on Earth alone, detection AP for this landform falls from 0.73 to 0.25
-    across cross-sensor transfer scenarios (Zhang et al., 2020). The Earth-to-Mars
-    gap spans planet, sensor, and resolution at once.</p>
+    <p class="result">Quantitative results withheld pending publication. For scale
+    of the problem: on Earth alone, detection AP for this landform class falls from
+    0.73 to 0.25 across cross-sensor transfer scenarios (Zhang et al., 2020). The
+    Earth-to-Mars gap spans planet, sensor, and resolution at once.</p>
 
     <p class="links">
       <a href="https://www.hou.usra.edu/meetings/lpsc2026/pdf/1717.pdf">LPSC 2026 abstract 1717</a>
@@ -119,5 +130,6 @@ page-layout: full
     <p class="links"><span>Repository release planned with first public pipeline code</span></p>
   </div>
 
+</div>
 </div>
 ```
