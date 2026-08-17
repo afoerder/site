@@ -28,7 +28,24 @@ $navbar-fg: #F2F3F2;
   --miss-d:   #A0530F;
 }
 
-body { font-family: $font-family-serif; color: var(--ink); background: var(--paper); }
+body { font-family: $font-family-serif; color: var(--ink); background: var(--field); }
+
+/* Fixed animated field behind the whole site. Does not scroll. */
+.site-field {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+#quarto-content, .navbar, .nav-footer { position: relative; z-index: 1; }
+
+/* Opaque sheet for light content, so the field only shows through dark bands */
+.sheet {
+  position: relative;
+  z-index: 1;
+  background: var(--paper);
+  padding-bottom: 4rem;
+}
 
 h1, h2, h3 { font-family: $font-family-sans-serif; font-weight: 500; letter-spacing: -0.02em; }
 
@@ -55,20 +72,31 @@ main.content:has(.hero) { max-width: none; padding: 0 0 5rem 0; }
 
 .hero {
   position: relative;
-  background: var(--field);
-  padding: 6rem 0 0 0;
-  overflow: hidden;
-  /* Full bleed: escape whatever container Quarto puts us in */
+  z-index: 1;
+  background: transparent;
+  padding: 6rem 0 4rem 0;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
-.hero-field { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-.hero-inner, .stager {
+.hero-inner {
   position: relative;
   z-index: 1;
   max-width: 1160px;
   margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
+  gap: 4rem;
+  align-items: center;
+}
+.hero-text { min-width: 0; }
+
+.stager {
+  position: relative;
+  z-index: 1;
+  max-width: 1160px;
+  margin: 3rem auto 0;
   padding: 0 2rem;
 }
 
@@ -174,8 +202,8 @@ main.content:has(.hero) { max-width: none; padding: 0 0 5rem 0; }
 
 /* ============ Light sections ============ */
 
-.band { max-width: 1160px; margin: 0 auto; padding: 5rem 2rem 0; }
-.band-narrow { max-width: 46rem; margin: 0 auto; padding: 5rem 2rem 0; }
+.band { max-width: 1160px; margin: 0 auto; padding: 4rem 2rem 0; }
+.band-narrow { max-width: 54rem; margin: 0 auto; padding: 3rem 2rem 0; }
 
 .section-head {
   display: flex;
@@ -190,7 +218,7 @@ main.content:has(.hero) { max-width: none; padding: 0 0 5rem 0; }
 }
 .section-head::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
 
-.prose { font-size: 1.05rem; max-width: 62ch; }
+.prose { font-size: 1.05rem; max-width: 68ch; }
 .prose p { margin-bottom: 1.1rem; }
 
 /* ---- Project cards ---- */
@@ -311,7 +339,7 @@ a:focus-visible, .navbar a:focus-visible, .stage-step:focus-visible {
 
 /* Stacked section heads inside one band should not double their top padding */
 .band-narrow + .band-narrow,
-.band + .band-narrow { padding-top: 3.5rem; }
+.band + .band-narrow { padding-top: 2.5rem; }
 
 /* ---------- Hero lede (second tier under the claim) ---------- */
 
@@ -352,10 +380,10 @@ a:focus-visible, .navbar a:focus-visible, .stage-step:focus-visible {
 
 html, body { overflow-x: hidden; }
 
-body:has(.hero) #quarto-content,
-body:has(.hero) .page-columns,
-body:has(.hero) .content.page-columns,
-body:has(.hero) main.content {
+#quarto-content,
+.page-columns,
+.content.page-columns,
+main.content {
   display: block !important;
   grid-template-columns: none !important;
   max-width: none !important;
@@ -365,9 +393,9 @@ body:has(.hero) main.content {
   padding-right: 0 !important;
 }
 
-body:has(.hero) .page-full,
-body:has(.hero) .column-page,
-body:has(.hero) .column-body {
+.page-full,
+.column-page,
+.column-body {
   max-width: none !important;
   width: auto !important;
   margin-left: 0 !important;
@@ -383,4 +411,129 @@ body:has(.hero) .column-body {
 @media (max-width: 900px) {
   .navbar > .container-fluid,
   .navbar > .container { padding-left: 1.25rem; padding-right: 1.25rem; }
+}
+
+/* ---------- Compact page header for inner pages ---------- */
+
+.page-head {
+  position: relative;
+  background: transparent;
+  z-index: 1;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 5rem 0 4rem;
+}
+.page-head-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.page-head h1 {
+  font-family: $font-family-sans-serif;
+  font-size: clamp(1.9rem, 3.4vw, 2.7rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #F7F8F7;
+  margin: 0 0 0.7rem 0;
+}
+.page-head p {
+  font-family: $font-family-serif;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: #A9B0AD;
+  max-width: 62ch;
+  margin: 0;
+}
+.page-head .kicker {
+  font-family: $font-family-monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--detect);
+  margin-bottom: 1.1rem;
+}
+
+/* ---------- Two-column About: prose beside a facts rail ---------- */
+
+.split {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 3.5rem 2rem 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 4rem;
+  align-items: start;
+}
+.split .prose { max-width: none; }
+
+.rail { border-top: 2px solid var(--miss-d); padding-top: 1.1rem; }
+.rail h4 {
+  font-family: $font-family-monospace;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--miss-d);
+  margin: 0 0 0.8rem 0;
+  font-weight: 500;
+}
+.rail h4:not(:first-child) { margin-top: 2rem; }
+.rail p, .rail li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0 0 0.7rem 0;
+}
+.rail .sub { color: var(--muted); font-size: 0.82rem; }
+.rail ul { list-style: none; margin: 0; padding: 0; }
+
+@media (max-width: 900px) {
+  .split { grid-template-columns: 1fr; gap: 2.5rem; padding-left: 1.25rem; padding-right: 1.25rem; }
+  .page-head { padding: 2.5rem 0 2rem; }
+  .page-head-inner { padding-left: 1.25rem; padding-right: 1.25rem; }
+}
+
+/* ---------- Pipeline panel inside the hero ---------- */
+
+.hero-stage { min-width: 0; }
+
+.hero-stage .stage-frame {
+  position: relative;
+  width: 100%;
+  background: #000;
+  border: 1px solid #232A2C;
+}
+.hero-stage .stage-frame::before { content: ""; display: block; padding-top: 100%; }
+
+.hero-stage .stage-caption {
+  margin-top: 0.9rem;
+  font-size: 0.66rem;
+}
+
+.stage-ticker {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+  list-style: none;
+  padding: 0;
+}
+.stage-ticker li {
+  flex: 1;
+  cursor: pointer;
+  padding-top: 0.5rem;
+  border-top: 1px solid #23292B;
+  font-family: $font-family-monospace;
+  font-size: 0.6rem;
+  line-height: 1.35;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #5C6360;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.stage-ticker li.is-on { color: var(--detect); border-top-color: var(--detect); }
+.stage-ticker li:hover { color: #C6CDC9; }
+
+@media (max-width: 980px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero-claim { max-width: none; }
 }

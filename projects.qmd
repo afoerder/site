@@ -4,6 +4,8 @@ page-layout: full
 ---
 
 ```{=html}
+<canvas class="site-field" aria-hidden="true"></canvas>
+
 <div class="page-head">
   <div class="page-head-inner">
     <div class="kicker">Projects</div>
@@ -82,10 +84,21 @@ page-layout: full
   <div class="entry">
     <span class="entry-label">In preparation</span>
     <h3>Knowing what a record cannot tell you</h3>
-    <p>REPLACE: two to four sentences. Determining whether the modern Mars dust
-    storm catalog can support forecasting at all, before a forecaster is built.
-    Name the union-find collapse from 26 major events to 13 independent episodes
-    as the contested design choice, and say why it is defensible.</p>
+    <p>Can a Martian dust storm be predicted? Researchers have spent decades hunting
+    for the signals that precede major storms, and many candidates have been reported,
+    but none has yet been shown to outperform the two forecasts that come for free:
+    the season's usual storm rate, and the conditions already prevailing. That led me
+    to ask whether the existing storm record contains enough information to prove that
+    a precursor signal beats those free forecasts.</p>
+
+    <p>It does not. Mars has produced only about a dozen independent major storms
+    since continuous observation began, far too few to tell a working forecast from a
+    lucky one. The more tractable question, and the one I am testing now, is whether
+    a storm already underway can be predicted to keep growing.</p>
+
+    <p>For mission planners this turns an open question into a concrete number. Storm
+    risk on Mars must, for now, rest on seasonal climatology, and any future forecast
+    claim can be checked against the bar this work sets before anyone acts on it.</p>
 
     <img src="images/predictability-budget.png" alt="Predictability budget in units of sigma">
 
@@ -96,7 +109,9 @@ page-layout: full
     about 8.</p>
 
     <p class="caveat">This is a predictability assessment and not a forecasting
-    system. Every floor statement is scoped to its design. The nulls exclude
+    system. Methods and decision thresholds were committed to version control before
+    each run, so the commit history is the record that nothing was decided after
+    seeing results. Every floor statement is scoped to its design. The nulls exclude
     effects large enough to support prediction for the features and estimands
     tested; they are not evidence that precursors do not exist.</p>
 

@@ -4,6 +4,8 @@ page-layout: full
 ---
 
 ```{=html}
+<canvas class="site-field" aria-hidden="true"></canvas>
+
 <div class="page-head">
   <div class="page-head-inner">
     <div class="kicker">About</div>
@@ -12,6 +14,8 @@ page-layout: full
     Based in Boulder, Colorado.</p>
   </div>
 </div>
+
+<div class="sheet">
 
 <div class="split">
 
@@ -84,5 +88,6 @@ page-layout: full
     </ul>
   </div>
 
+</div>
 </div>
 ```

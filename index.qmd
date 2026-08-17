@@ -4,6 +4,8 @@ page-layout: full
 ---
 
 ```{=html}
+<canvas class="site-field" aria-hidden="true"></canvas>
+
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-text">
@@ -97,8 +99,9 @@ page-layout: full
       <img class="card-fig" src="images/predictability-budget.png" alt="">
       <span class="card-status">In preparation</span>
       <h3>Knowing what a record cannot tell you</h3>
-      <p class="card-line">REPLACE: one sentence. Establishing whether a forecasting
-      problem is solvable at all, before anyone spends years building the forecaster.</p>
+      <p class="card-line">Can a Martian dust storm be predicted? I asked whether the
+      observational record contains enough information to prove that any proposed
+      precursor beats a seasonal average. It does not, and I quantified by how much.</p>
       <p class="card-metric">Measured effects ≤ 0.32σ against a ~1.7σ floor for this record and design</p>
       <p class="card-links">
         <a href="projects.html">Details</a>
