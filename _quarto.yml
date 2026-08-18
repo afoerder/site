@@ -19,8 +19,6 @@ website:
         text: "Projects"
       - href: publications.qmd
         text: "Publications"
-      - href: about.qmd
-        text: "About"
     right:
       - icon: github
         href: https://github.com/afoerder

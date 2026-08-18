@@ -19,8 +19,6 @@ page-layout: full
     <p class="hero-lede">Computer vision for detection and measurement in orbital
     imagery, where the labels do not exist yet.</p>
 
-    <p class="hero-status">Defending Spring 2027 · seeking applied and research
-    scientist roles in Earth observation, geospatial ML, and AI for science.</p>
 
     <ul class="linkrow">
       <li><a href="mailto:REPLACE@example.com">Email</a></li>
@@ -40,6 +38,73 @@ page-layout: full
 </section>
 
 <div class="sheet">
+
+<div class="band">
+  <div class="section-head">About</div>
+</div>
+
+<div class="split">
+
+  <div class="prose">
+    <p>I am a PhD candidate in Earth and Planetary Sciences at the University of
+    Tennessee, Knoxville, advised by Dr. Bradley J. Thomson, defending Spring 2027.
+    I am looking for applied and research scientist roles in Earth observation,
+    geospatial machine learning, and AI for science.</p>
+
+    <p>[REPLACE after reading: this is a draft of your origin in my words; rewrite
+    it in yours.] I came to machine learning from the geology side. My earlier work
+    was Antarctic geochemistry, using the McMurdo Dry Valleys as a Mars analogue,
+    which meant a lot of careful measurement of samples one at a time. I went to the
+    NASA SMD AI/ML workshop in 2024, saw what these methods could do on problems I
+    already cared about, and rebuilt my dissertation around them. Most of what I
+    know about deep learning I taught myself in the two years since, working on a
+    problem where the training data did not exist and had to be made.</p>
+
+    <p>Most of what I do sits between a model and a scientific claim. I am
+    comfortable at both ends, building and evaluating the pipeline and then
+    defending what its output does and does not support. That work is not specific
+    to my own field, and researchers outside it come to me for it: I have recently
+    been helping a paleobiology group apply machine learning to their data
+    [REPLACE: adjust the verb to match reality], and I work regularly with domain
+    experts and collaborators outside academia who are not machine learning people.</p>
+
+    <p>I am good at explaining novel technical work in approachable language, at
+    framing why a problem matters to people who do not already work on it, and at
+    making the case for a direction to the people who decide whether it gets
+    resourced. I have also led junior contributors on technical work.</p>
+
+    <p>When the tooling I need does not exist, I build it. Labels were the binding
+    constraint on my dissertation work, so I built an annotation application to
+    remove it, and I have since built a verification layer that enforces
+    source-checking and evidence standards in my own AI-assisted workflow. I also
+    spend real effort deciding whether a problem calls for a model at all. Some of
+    my work has been establishing that a question was not answerable with the data
+    available, which is a less satisfying result to report and a more useful one
+    to have.</p>
+  </div>
+
+  <div class="rail">
+    <h4>Education</h4>
+    <ul>
+      <li>Ph.D. Earth, Environmental, and Planetary Sciences<br>
+        <span class="sub">University of Tennessee, Knoxville · in progress</span></li>
+      <li>M.S. Planetary Geology<br>
+        <span class="sub">University of Hawai'i at Mānoa</span></li>
+      <li>B.S. Geology-Biology<br>
+        <span class="sub">Brown University</span></li>
+    </ul>
+
+    <h4>Previously</h4>
+    <ul>
+      <li>Researcher, Tolbert Group<br>
+        <span class="sub">CIRES, University of Colorado Boulder</span></li>
+    </ul>
+
+    <h4>Eligibility</h4>
+    <p class="sub">U.S. citizen, eligible to obtain a security clearance.</p>
+  </div>
+
+</div>
 
 <div class="band">
   <div class="section-head">Selected work</div>
