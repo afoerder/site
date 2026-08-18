@@ -9,7 +9,7 @@ page-layout: full
 <div class="page-head">
   <div class="page-head-inner">
     <div class="kicker">Projects</div>
-    <h1>What I have built</h1>
+    <h1>What I've built, and what I've found</h1>
     <p>Each entry states the problem, what I built, and where the result currently
     stands. Status labels are literal. Work that is unpublished or in preparation is
     marked as such, and limitations are stated alongside results.</p>
@@ -34,9 +34,10 @@ page-layout: full
     weighted equally, since the rarer types are the hard ones. It needs as few as 25
     to 50 junctions to tell one terrain from another.</p>
 
-    <p>On 19 images of western Utopia Planitia, the junction mix shifts with latitude
-    the way the climate history predicts, and independent ice-stability proxies agree.
-    That is a climate signal recovered at a scale hand-mapping cannot reach.</p>
+    <p>On 19 images of western Utopia Planitia, Mars, the junction mix shifts with
+    latitude as predicted, and aligns with an independent ice-stability proxy also
+    used for paleoclimate interpretation. This is a climate signal recovered at a
+    scale hand-mapping cannot realistically reach.</p>
 
     <p>A planet's worth of imagery is far too much to download, so the pipeline
     reads only the small piece of each image it needs, directly from the archive,
@@ -75,33 +76,37 @@ page-layout: full
 
   <div class="entry">
     <h3>Training on Earth, deploying on Mars</h3>
-    <p>Can an AI vision model trained only on orbital Earth images identify similar
-    landforms on Mars? Geologists have reasoned by terrestrial analogy for decades;
-    this project asked whether the analogy survives being made computational. I
-    trained segmentation models on three Earth landform classes, arctic tundra
-    polygons, inverted channels, and valley networks, and evaluated them on Mars
-    orbital imagery, asking where the analogy held and what, if anything, still had
-    to come from Mars.</p>
+    <p>Can an AI model trained only on satellite images of Earth recognize the same
+    kinds of landforms on Mars? Geologists have reasoned this way for over a century,
+    reading martian terrain through its closest Earth counterparts, and this project
+    asked whether that reasoning survives being handed to a machine. I trained
+    image-segmentation models on three Earth landform types: polygon-patterned tundra
+    in the Arctic, ancient riverbeds preserved as ridges, and branching valley
+    networks. Then I set them loose on Mars orbital imagery, asking two questions.
+    Where does the Earth analogy hold, and what, if anything, still has to come from
+    Mars?</p>
 
     <p>The three landforms gave three different answers. Valley networks hinted at
     real transfer, but the handful of well-mapped martian examples was too small to
     prove it. The ridged riverbeds were the hard failure: at the resolution of
     Mars-wide imagery, a model trained on Earth did no better than one that simply
     labels the entire image a riverbed. The polygonal terrain succeeded. An
-    Earth-trained model found martian polygonal ground, and the same model stripped
-    of its Earth training could not, a margin that isolates what the Earth analogy
-    itself contributes.</p>
+    Earth-trained model found martian ice-wedge polygons that the same model,
+    stripped of its Earth training, could not, and that margin is the analogy's
+    contribution, isolated.</p>
 
-    <p>So what crossed the planetary gap, and what did not? Form crossed: the
-    geometry that makes a landform recognizable. Scale is where the analogy strains,
-    since martian landforms run several times larger than their Earth counterparts,
-    a mismatch Earth's examples cannot represent. And one simple fact never crossed
-    at all: that these landforms exist on Mars. In one experiment, a model taught
-    only from its own mistakes concluded that Mars had no such landforms, while
-    staying just as accurate on Earth. Earth can teach a model what to look for.
-    Only Mars can tell it there is something there to find.</p>
+    <p>So what crossed the planetary gap, and what didn't? Earth taught the models
+    what these landforms look like. What Earth could not supply was scale: the
+    martian examples in our data are several times larger than the terrestrial ones
+    the models trained on, a mismatch between the datasets we could measure, whatever
+    it reflects about the planets. Adding martian training data improved every model,
+    on every landform. And one experiment showed how badly the alternatives fail:
+    taught only from its own mistakes, a model concluded that Mars had no such
+    landforms at all, while staying just as accurate on Earth. Earth can teach a
+    model what a landform looks like. Teaching it what that landform looks like on
+    Mars is a separate problem.</p>
 
-    <img src="images/REPLACE-transfer.png" alt="REPLACE">
+    <!-- TODO: add a transfer-learning figure here as images/transfer.png -->
 
     <p class="result">Quantitative results withheld pending publication. For scale
     of the problem: on Earth alone, detection performance for polygonal terrain falls
