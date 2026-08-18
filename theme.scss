@@ -631,3 +631,6 @@ main.content {
   .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero-portrait { max-width: 260px; }
 }
+
+/* First block on the sheet sits tight under the hero */
+.sheet > .split-lead { padding-top: 2.25rem; }

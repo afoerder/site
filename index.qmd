@@ -39,11 +39,7 @@ page-layout: full
 
 <div class="sheet">
 
-<div class="band">
-  <div class="section-head">About</div>
-</div>
-
-<div class="split">
+<div class="split split-lead">
 
   <div class="prose">
     <p>I am a PhD candidate in Earth and Planetary Sciences at the University of
