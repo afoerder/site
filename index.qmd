@@ -20,14 +20,6 @@ page-layout: full
     imagery, where the labels do not exist yet.</p>
 
 
-    <ul class="linkrow">
-      <li><a href="mailto:REPLACE@example.com">Email</a></li>
-      <li><a href="cv.pdf">CV (PDF)</a></li>
-      <li><a href="https://github.com/afoerder">GitHub</a></li>
-      <li><a href="https://scholar.google.com/citations?user=LkSwiQIAAAAJ&hl=en">Google Scholar</a></li>
-      <li><a href="https://www.linkedin.com/in/andrew-foerder-79a830b0">LinkedIn</a></li>
-      <li><a href="https://orcid.org/0009-0001-4430-0844">ORCID</a></li>
-    </ul>
     </div>
 
     <div class="hero-portrait">
@@ -90,14 +82,18 @@ page-layout: full
         <span class="sub">Brown University</span></li>
     </ul>
 
-    <h4>Previously</h4>
-    <ul>
-      <li>Researcher, Tolbert Group<br>
-        <span class="sub">CIRES, University of Colorado Boulder</span></li>
-    </ul>
-
     <h4>Eligibility</h4>
     <p class="sub">U.S. citizen, eligible to obtain a security clearance.</p>
+
+    <h4>Find me</h4>
+    <ul class="rail-links">
+      <li><a href="mailto:REPLACE@example.com">Email</a></li>
+      <li><a href="cv.pdf">Curriculum Vitae (PDF)</a></li>
+      <li><a href="https://github.com/afoerder">GitHub</a></li>
+      <li><a href="https://scholar.google.com/citations?user=LkSwiQIAAAAJ&hl=en">Google Scholar</a></li>
+      <li><a href="https://www.linkedin.com/in/andrew-foerder-79a830b0">LinkedIn</a></li>
+      <li><a href="https://orcid.org/0009-0001-4430-0844">ORCID</a></li>
+    </ul>
   </div>
 
 </div>
