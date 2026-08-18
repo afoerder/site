@@ -65,7 +65,9 @@ page-layout: full
     accepted. The planet-scale deployment is in preparation. Train and test splits
     for the detector are made at the tile level, so adjacent tiles from the same
     image can appear in both, and its performance should be read as an upper bound
-    on generalization to unseen scenes.</p>
+    on generalization to unseen scenes. An earlier version of the classifier had a
+    leakage problem between the training and evaluation splits; I found it, and the
+    full eight-method model stack was rebuilt and re-evaluated on clean data.</p>
 
     <p class="links"><span>Code released on acceptance</span></p>
     <span class="entry-label">Under review · scale-up in progress</span>
@@ -142,7 +144,9 @@ page-layout: full
     <p class="caveat">This is a predictability assessment and not a forecasting
     system. Methods and decision thresholds were committed to version control before
     each run, so the commit history is the record that nothing was decided after
-    seeing results. Every floor statement is scoped to its design. The nulls exclude
+    seeing results. One run was killed mid-flight when a check caught rows reading
+    atmospheric data from after the event being predicted; no result was read before
+    the fix, so the added robustness tests are provably not after the fact. Every floor statement is scoped to its design. The nulls exclude
     effects large enough to support prediction for the features and estimands
     tested; they are not evidence that precursors do not exist.</p>
 

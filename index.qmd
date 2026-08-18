@@ -51,19 +51,27 @@ page-layout: full
     build the pipeline, evaluate it honestly, then defend what its output does and
     doesn't support. The domain changes but the problem doesn't: scarce labels, a
     large archive, and a result someone has to stake a decision on. That combination
-    shows up everywhere, which is why a paleobiology group recently brought me in to
-    help apply machine learning to their data, and why a lot of my day-to-day is
-    translating between models and the domain experts who don't build them, or
-    bringing junior contributors up to speed on the technical side.</p>
+    shows up everywhere. It's why a paleobiology group recently brought me in to
+    help apply machine learning to their data, and it's why most of my day-to-day is
+    translation: turning model outputs into something a domain expert can use, and
+    helping junior contributors become people who can build the models themselves.</p>
 
-    <p>When the tooling I need doesn't exist, I build it. Labels were the bottleneck
-    on my dissertation, so I built an annotation app to clear it. I've since built a
-    verification layer that holds my AI-assisted work to source-checking and evidence
-    standards, because I'd rather catch my own errors than have a reviewer do it. And
-    I spend real effort deciding whether a problem calls for a model at all. Some of
-    my work has been showing that a question wasn't answerable with the data
-    available, which is a less satisfying result to report and a more useful one to
-    have.</p>
+    <p>When the tooling I need doesn't exist, I build it. For example, labels were
+    the bottleneck for a project in my dissertation, so I built an annotation app to
+    expedite labeling and dataset curation.</p>
+
+    <p>I also put real effort into deciding whether a problem even calls for an AI
+    model, and I'm willing to say so when it doesn't. Some of my work has shown that
+    a question wasn't answerable with the data available, which is a less satisfying
+    result to report but a more useful one to have.</p>
+
+    <p>Preferring the useful answer over the satisfying one isn't a research method,
+    it's just how I'm wired. The person you get is the same one on this
+    page: incurably curious, and always working on getting better at what I do.
+    I'm not interested in being some polished version of myself at work, and I
+    genuinely believe that openness is what lets people with different skills combine
+    them and point them at a common goal. If that sounds like someone you'd want to
+    work with, get in touch.</p>
   </div>
 
   <div class="rail">
@@ -106,27 +114,26 @@ page-layout: full
           <img class="stage-img" src="images/step4-classified.png" alt="Classified junction network">
         </div>
       </div>
-      <span class="card-status">Under review · scale-up in progress</span>
       <h3>Martian paleoclimate by counting cracks</h3>
       <p class="card-line">The way cracks meet in frozen ground can record past
       climate conditions, but with over 100,000 orbital images to search, reading
       them by hand is not an option. I built a deep learning pipeline that detects
       and classifies martian crack junctions, validated on a subset of HiRISE scenes
       and scaling next to the martian mid-latitudes.</p>
+      <span class="card-status">Under review · scale-up in progress</span>
     </div>
 
     <div class="card">
       <img class="card-fig" src="images/step1-input.png" alt="">
-      <span class="card-status">Results in preparation</span>
       <h3>Training on Earth, deploying on Mars</h3>
       <p class="card-line">Can a vision model trained only on Earth imagery find the
       same landforms on Mars? I trained segmentation models on arctic tundra polygons,
       inverted channels, and valley networks, then tested them on Mars.</p>
+      <span class="card-status">Results in preparation</span>
     </div>
 
     <div class="card">
       <img class="card-fig" src="images/predictability-budget.png" alt="">
-      <span class="card-status">In preparation</span>
       <h3>Knowing a record's limit</h3>
       <p class="card-line">Can a Martian dust storm be predicted? Researchers have
       reported warning signs for decades, yet none has been shown to beat two
@@ -135,57 +142,13 @@ page-layout: full
       that any warning sign works. It does not. Mars has produced only about a dozen
       independent major storms since we began watching, and I measured how far short
       of enough that falls.</p>
+      <span class="card-status">In preparation</span>
     </div>
 
   </div>
 </div>
 
-<div class="band-narrow">
-  <div class="section-head">How I work</div>
-  <div class="prose">
-    <p>I audit for leakage before I trust a number. I have found it in my own work
-    twice: once in a train and evaluation split that forced a full rebuild and
-    re-evaluation of an eight-method model stack, and once mid-run, when a check
-    showed a portion of rows were reading atmospheric data from after the event
-    being predicted. That run was killed before any result was read, so the fix and
-    the added robustness tests are provably not post hoc.</p>
 
-    <p>Where the design allows it, I pre-register. Methods and decision thresholds
-    are committed to version control before the run they govern, so the commit
-    history itself is the evidence that nothing was decided after seeing the
-    numbers. I run power analysis before I model, so I know what effect size a
-    study of a given design could detect at all.</p>
-
-    <p>I verify changes instead of assuming them. When I replaced a full-image
-    decode with a windowed read, I wrote a parity test proving the new path produced
-    identical output before merging it. A model that ships in my pipeline carries a
-    provenance record with its training row counts and a numerical parity check.
-    I report error bars, and I state limitations alongside results here and in my
-    papers.</p>
-  </div>
-</div>
-
-<div class="band-narrow">
-  <div class="section-head">What I use</div>
-  <div class="prose skills">
-    <p class="skill-lead">I build and train detection and segmentation models,
-    including writing architectures and loss functions from scratch when the
-    standard ones fail on badly imbalanced data.</p>
-    <p class="skill-list">PyTorch · U-Net and U-Net++ · Mask R-CNN (Detectron2) · SAM · DINOv3</p>
-
-    <p class="skill-lead">I design the evaluation before the model, and I verify a
-    result before I trust it.</p>
-    <p class="skill-list">scikit-learn · XGBoost · nested and grouped cross-validation · probability calibration · power analysis · leakage detection</p>
-
-    <p class="skill-lead">I work with large orbital image archives, streaming and
-    processing them in place instead of downloading them whole.</p>
-    <p class="skill-list">rasterio and Cloud-Optimized GeoTIFF · NASA PDS STAC · scikit-image · HiRISE and CTX</p>
-
-    <p class="skill-lead">I take pipelines off a laptop and onto a GPU fleet, with
-    cost controls that survive an unattended run.</p>
-    <p class="skill-list">AWS Batch GPU Spot · Docker (multi-stage CUDA) · GCP Vertex AI · S3 · Optuna</p>
-  </div>
-</div>
 
 <div class="band-narrow">
   <div class="section-head">Selected publications</div>
