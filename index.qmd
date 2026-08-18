@@ -10,11 +10,8 @@ page-layout: full
   <div class="hero-inner">
     <div class="hero-text">
     <div class="hero-id">
-      <img class="hero-photo" src="images/portrait.jpg" alt="Andrew Foerder">
-      <div>
-        <div class="hero-name">Andrew Foerder</div>
-        <div class="hero-role">Machine learning · Earth and planetary remote sensing</div>
-      </div>
+      <div class="hero-name">Andrew Foerder</div>
+      <div class="hero-role">Machine learning · Earth and planetary remote sensing</div>
     </div>
 
     <h1 class="hero-claim">I turn orbital imagery into numbers you can trust.</h1>
@@ -22,11 +19,8 @@ page-layout: full
     <p class="hero-lede">Computer vision for detection and measurement problems
     where the labels do not exist yet.</p>
 
-    <p class="hero-bio">
-      My work is getting from a model output to a number that survives scrutiny.
-      <strong>Defending Spring 2027 and looking for applied and research scientist
-      roles in Earth observation, geospatial ML, and AI for science.</strong>
-    </p>
+    <p class="hero-status">Defending Spring 2027 · seeking applied and research
+    scientist roles in Earth observation, geospatial ML, and AI for science.</p>
 
     <ul class="linkrow">
       <li><a href="mailto:REPLACE@example.com">Email</a></li>
@@ -38,6 +32,9 @@ page-layout: full
     </ul>
     </div>
 
+    <div class="hero-portrait">
+      <img src="images/portrait.jpg" alt="Andrew Foerder">
+    </div>
   </div>
 
 </section>
