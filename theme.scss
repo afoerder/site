@@ -280,7 +280,8 @@ main.content:has(.hero) { max-width: none; padding: 0 0 5rem 0; }
   color: var(--miss-d);
   border: 1px solid rgba(160,83,15,0.4);
   padding: 0.2rem 0.55rem;
-  margin-bottom: 0.9rem;
+  margin-top: 1.4rem;
+  margin-bottom: 0;
 }
 .entry h3 { margin: 0 0 0.8rem; font-size: 1.2rem; }
 .entry img { width: 100%; display: block; margin: 1.3rem 0; background: #000; }

@@ -21,25 +21,22 @@ page-layout: full
 <div class="band-narrow">
 
   <div class="entry">
-    <span class="entry-label">Under review · scale-up in progress</span>
     <h3>From raw HiRISE tiles to measured landforms</h3>
     <p>REPLACE: two to four sentences on the full pipeline. Detection of thermal
     contraction polygons in orbital imagery, then classification of fracture
     junction geometry (T, Y, X types) as a measurable variable. Say in one
     sentence why the junction classes are hard to separate.</p>
 
+    <p>A planet's worth of imagery is far too much to download, so the pipeline
+    reads only the small piece of each image it needs, directly from the archive,
+    and finds its own inputs rather than being handed a list. Before that change
+    shipped I checked it against the old approach to confirm the results came out
+    identical. It runs on rented GPU capacity that can be taken away mid-job, with
+    a spending cutoff so an unattended run cannot get away from me.</p>
+
     <img src="images/step4-classified.png" alt="Classified junction network">
 
-    <p class="result">Junction classification: macro F1 0.77 across three classes.
-    REPLACE: add the comparator, either inter-annotator agreement or the chance
-    floor.</p>
-
-    <p class="result">TCP detection: Cascade Mask R-CNN, AP50 69.9 ± 0.6, single
-    class. For reference, Mask R-CNN detection of Arctic ice-wedge polygons, the
-    same landform produced by the same process on Earth, reports mAP 0.695 at IoU
-    0.50 on matched-resolution aerial imagery (Zhang et al., 2018), on a task that
-    also assigns polygon subtype and with training data several orders of magnitude
-    larger than what exists for Mars.</p>
+    <p class="result">Martian fracture junction classification.</p>
 
     <p class="caveat">The classification method and pilot deployment are under
     review at JGR: Machine Learning and Computation, submitted April 2026, not yet
@@ -49,10 +46,10 @@ page-layout: full
     metrics should be read as an upper bound on generalization to unseen scenes.</p>
 
     <p class="links"><span>Code released on acceptance</span></p>
+    <span class="entry-label">Under review · scale-up in progress</span>
   </div>
 
   <div class="entry">
-    <span class="entry-label">Results in preparation</span>
     <h3>Training on Earth, deploying on Mars</h3>
     <p>Can an AI vision model trained only on orbital Earth images identify similar
     landforms on Mars? Geologists have reasoned by terrestrial analogy for decades;
@@ -79,11 +76,11 @@ page-layout: full
       <a href="https://www.hou.usra.edu/meetings/lpsc2026/pdf/1717.pdf">LPSC 2026 abstract 1717</a>
       <span>Code not yet released</span>
     </p>
+    <span class="entry-label">Results in preparation</span>
   </div>
 
   <div class="entry">
-    <span class="entry-label">In preparation</span>
-    <h3>Knowing what a record cannot tell you</h3>
+    <h3>Knowing a record's limit</h3>
     <p>Can a Martian dust storm be predicted? Researchers have spent decades hunting
     for the signals that precede major storms, and many candidates have been reported,
     but none has yet been shown to outperform the two forecasts that come for free:
@@ -116,34 +113,10 @@ page-layout: full
     tested; they are not evidence that precursors do not exist.</p>
 
     <p class="links"><span>Pre-registration and code: Zenodo deposit forthcoming</span></p>
+    <span class="entry-label">In preparation</span>
   </div>
 
-  <div class="entry">
-    <span class="entry-label">In progress</span>
-    <h3>Infrastructure for imagery at planet scale</h3>
-    <p>Processing an orbital archive means not downloading it. I replaced a
-    full-image decode subprocess with windowed Cloud-Optimized GeoTIFF reads,
-    verified by a parity test proving identical output before the change shipped,
-    and built a client against NASA's PDS STAC API to discover HiRISE footprints
-    programmatically. The pipeline runs on AWS Batch GPU Spot fleets, packaged in a
-    multi-stage Docker build that separates CUDA compile and runtime images, with a
-    kill switch so an unattended run cannot burn budget. GCP Vertex AI is
-    configured as a second deployment target.</p>
 
-    <p class="links"><span>Code released with the pipeline</span></p>
-  </div>
-
-  <div class="entry">
-    <span class="entry-label">In daily use</span>
-    <h3>Verification tooling for AI-assisted scientific work</h3>
-    <p>REPLACE: two to four sentences. Frame this as infrastructure and not
-    configuration. A verification layer that enforces source checking, blocks
-    unverified claims, and gates destructive operations behind a pre-execution
-    check. Lead with the engineering decisions.</p>
-
-    <!-- Do not add a repository link until the repo is actually public. -->
-    <p class="links"><span>Repository release planned with first public pipeline code</span></p>
-  </div>
 
 </div>
 </div>
