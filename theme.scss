@@ -408,7 +408,9 @@ main.content {
 /* Navbar should span the full width too */
 .navbar { width: 100%; }
 .navbar > .container-fluid,
-.navbar > .container { max-width: 1160px; margin: 0 auto; padding-left: 2rem; padding-right: 2rem; }
+.navbar > .container { max-width: 1240px; margin: 0 auto; padding-left: 2rem; padding-right: 2rem; }
+.navbar .navbar-collapse { margin-left: 0; }
+.navbar .navbar-nav { margin-left: 0; padding-left: 0; }
 
 @media (max-width: 900px) {
   .navbar > .container-fluid,

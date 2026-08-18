@@ -11,6 +11,7 @@ website:
   description: "Machine learning and computer vision for Earth and planetary remote sensing."
   site-url: "https://REPLACE-WITH-YOUR-DOMAIN"
   navbar:
+    title: false
     left:
       - href: index.qmd
         text: "Home"

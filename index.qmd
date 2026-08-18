@@ -14,10 +14,10 @@ page-layout: full
       <div class="hero-role">Machine learning · Earth and planetary remote sensing</div>
     </div>
 
-    <h1 class="hero-claim">I turn orbital imagery into numbers you can trust.</h1>
+    <h1 class="hero-claim">I measure what’s too big to map by hand.</h1>
 
-    <p class="hero-lede">Computer vision for detection and measurement problems
-    where the labels do not exist yet.</p>
+    <p class="hero-lede">Computer vision for detection and measurement in orbital
+    imagery, where the labels do not exist yet.</p>
 
     <p class="hero-status">Defending Spring 2027 · seeking applied and research
     scientist roles in Earth observation, geospatial ML, and AI for science.</p>
