@@ -74,7 +74,7 @@ main.content:has(.hero) { max-width: none; padding: 0 0 5rem 0; }
   position: relative;
   z-index: 1;
   background: transparent;
-  padding: 2.25rem 0 2rem 0;
+  padding: 1.5rem 0 1.25rem 0;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -100,7 +100,7 @@ main.content:has(.hero) { max-width: none; padding: 0 0 5rem 0; }
   padding: 0 2rem;
 }
 
-.hero-id { margin-bottom: 1.6rem; }
+.hero-id { margin-bottom: 2rem; }
 .hero-photo {
   width: 96px; height: 96px;
   border-radius: 50%;
@@ -356,7 +356,7 @@ a:focus-visible, .navbar a:focus-visible, .stage-step:focus-visible {
   letter-spacing: -0.01em;
 }
 
-.hero-claim { margin-bottom: 1rem; max-width: 28ch; }
+.hero-claim { margin-bottom: 3.5rem; max-width: 28ch; }
 
 /* ---------- Skills block ---------- */
 
