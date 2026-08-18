@@ -10,6 +10,7 @@ website:
   title: "Andrew Foerder"
   description: "Machine learning and computer vision for Earth and planetary remote sensing."
   site-url: "https://REPLACE-WITH-YOUR-DOMAIN"
+  search: false
   navbar:
     title: false
     left:
@@ -19,10 +20,6 @@ website:
         text: "Projects"
       - href: publications.qmd
         text: "Publications"
-    right:
-      - icon: github
-        href: https://github.com/afoerder
-        aria-label: GitHub
   page-footer:
     left: "Andrew Foerder"
     right: "Built with Quarto"

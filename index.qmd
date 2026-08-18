@@ -110,12 +110,6 @@ page-layout: full
           <img class="stage-img" src="images/step3-skeleton.png" alt="Morphological skeleton">
           <img class="stage-img" src="images/step4-classified.png" alt="Classified junction network">
         </div>
-        <ol class="stage-ticker">
-          <li class="stage-step is-on" data-i="0" tabindex="0">01 Tile</li>
-          <li class="stage-step" data-i="1" tabindex="0">02 Mask</li>
-          <li class="stage-step" data-i="2" tabindex="0">03 Skeleton</li>
-          <li class="stage-step" data-i="3" tabindex="0">04 Junctions</li>
-        </ol>
       </div>
       <span class="card-status">Under review · scale-up in progress</span>
       <h3>Martian paleoclimate by counting cracks</h3>
@@ -227,29 +221,4 @@ page-layout: full
 
 
 
-<script>
-(function () {
-  var imgs = document.querySelectorAll('.stage-img');
-  var steps = document.querySelectorAll('.stage-step');
-  var i = 0, timer = null;
-  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  function show(n) {
-    i = n;
-    imgs.forEach(function (el, k) { el.classList.toggle('is-on', k === n); });
-    steps.forEach(function (el, k) { el.classList.toggle('is-on', k === n); });
-  }
-  function play() { if (!reduce && !timer) timer = setInterval(function () { show((i + 1) % imgs.length); }, 2600); }
-  function stop() { clearInterval(timer); timer = null; }
-
-  steps.forEach(function (el) {
-    el.addEventListener('mouseenter', function () { stop(); show(+el.dataset.i); });
-    el.addEventListener('click', function () { stop(); show(+el.dataset.i); });
-    el.addEventListener('focus', function () { stop(); show(+el.dataset.i); });
-  });
-  var wrap = document.querySelector('.card-stage');
-  if (wrap) wrap.addEventListener('mouseleave', play);
-  play();
-})();
-</script>
 ```

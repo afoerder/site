@@ -80,3 +80,29 @@ if (cv) {
   let t;
   addEventListener('resize', () => { clearTimeout(t); t = setTimeout(() => { seed(); draw(); }, 200); });
 }
+
+/* ---- Cycling pipeline stages (any page that has .stage-img) ---- */
+(function () {
+  var imgs = document.querySelectorAll('.stage-img');
+  if (!imgs.length) return;
+  var steps = document.querySelectorAll('.stage-step');
+  var i = 0, timer = null;
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function show(n) {
+    i = n;
+    imgs.forEach(function (el, k) { el.classList.toggle('is-on', k === n); });
+    steps.forEach(function (el, k) { el.classList.toggle('is-on', k === n); });
+  }
+  function play() { if (!reduce && !timer) timer = setInterval(function () { show((i + 1) % imgs.length); }, 2600); }
+  function stop() { clearInterval(timer); timer = null; }
+
+  steps.forEach(function (el) {
+    el.addEventListener('mouseenter', function () { stop(); show(+el.dataset.i); });
+    el.addEventListener('click', function () { stop(); show(+el.dataset.i); });
+    el.addEventListener('focus', function () { stop(); show(+el.dataset.i); });
+  });
+  var wrap = document.querySelector('.card-stage') || document.querySelector('.entry-stage');
+  if (wrap) wrap.addEventListener('mouseleave', play);
+  play();
+})();
