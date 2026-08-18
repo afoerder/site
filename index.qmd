@@ -69,16 +69,12 @@ page-layout: full
     <div class="card">
       <img class="card-fig" src="images/step4-classified.png" alt="">
       <span class="card-status">Under review · scale-up in progress</span>
-      <h3>From raw HiRISE tiles to measured landforms</h3>
-      <p class="card-line">The way cracks meet in frozen ground records what the
-      climate did. Mars has over 100,000 orbital images and this had been surveyed by
-      hand exactly once, so I built a pipeline that does it automatically.</p>
-      <p class="card-metric">84% of junctions labeled correctly · a climate signal
-      recovered at a scale hand-mapping cannot reach</p>
-      <p class="card-links">
-        <a href="projects.html">Details</a>
-        <span>Code on acceptance</span>
-      </p>
+      <h3>Martian paleoclimate by counting cracks</h3>
+      <p class="card-line">The way cracks meet in frozen ground can record past
+      climate conditions, but with over 100,000 orbital images to search, reading
+      them by hand is not an option. I built a deep learning pipeline that detects
+      and classifies martian crack junctions, validated on a subset of HiRISE scenes
+      and scaling next to the martian mid-latitudes.</p>
     </div>
 
     <div class="card">
@@ -88,26 +84,19 @@ page-layout: full
       <p class="card-line">Can a vision model trained only on Earth imagery find the
       same landforms on Mars? I trained segmentation models on arctic tundra polygons,
       inverted channels, and valley networks, then tested them on Mars.</p>
-      <p class="card-metric">Earth can teach a model what to look for. Only Mars can
-      tell it there is something there to find.</p>
-      <p class="card-links">
-        <a href="projects.html">Details</a>
-        <a href="https://www.hou.usra.edu/meetings/lpsc2026/pdf/1717.pdf">LPSC 2026</a>
-      </p>
     </div>
 
     <div class="card">
       <img class="card-fig" src="images/predictability-budget.png" alt="">
       <span class="card-status">In preparation</span>
       <h3>Knowing a record's limit</h3>
-      <p class="card-line">Can a Martian dust storm be predicted? I asked whether the
-      observational record contains enough information to prove that any proposed
-      precursor beats a seasonal average. It does not, and I quantified by how much.</p>
-      <p class="card-metric">Measured effects ≤ 0.32σ against a ~1.7σ floor for this record and design</p>
-      <p class="card-links">
-        <a href="projects.html">Details</a>
-        <span>Zenodo forthcoming</span>
-      </p>
+      <p class="card-line">Can a Martian dust storm be predicted? Researchers have
+      reported warning signs for decades, yet none has been shown to beat two
+      forecasts that cost nothing: what the season usually brings, and what the storm
+      is already doing. So I asked whether the record holds enough storms to prove
+      that any warning sign works. It does not. Mars has produced only about a dozen
+      independent major storms since we began watching, and I measured how far short
+      of enough that falls.</p>
     </div>
 
   </div>

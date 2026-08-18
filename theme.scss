@@ -538,3 +538,16 @@ main.content {
   .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero-claim { max-width: none; }
 }
+
+/* ---------- Card: kill Bootstrap's .card chrome ---------- */
+/* Our .card collides with Bootstrap's, which supplies the vertical hairlines. */
+
+.cards .card,
+.cards .card:hover {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+.cards .card > * { border-left: 0; border-right: 0; }
