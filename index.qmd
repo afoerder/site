@@ -34,41 +34,36 @@ page-layout: full
 <div class="split split-lead">
 
   <div class="prose">
-    <p>I am a PhD candidate in Earth and Planetary Sciences at the University of
-    Tennessee, Knoxville, advised by Dr. Bradley J. Thomson, defending Spring 2027.
-    I am looking for applied and research scientist roles in Earth observation,
-    geospatial machine learning, and AI for science.</p>
+    <p>I'm a PhD candidate in Earth and Planetary Sciences at the University of
+    Tennessee, Knoxville, working with Dr. Bradley J. Thomson and defending in
+    Spring 2027. After that, I'm headed for applied and research scientist roles in
+    Earth observation, geospatial machine learning, and AI for science.</p>
 
-    <p>[REPLACE after reading: this is a draft of your origin in my words; rewrite
-    it in yours.] I came to machine learning from the geology side. My earlier work
-    was Antarctic geochemistry, using the McMurdo Dry Valleys as a Mars analogue,
-    which meant a lot of careful measurement of samples one at a time. I went to the
-    NASA SMD AI/ML workshop in 2024, saw what these methods could do on problems I
-    already cared about, and rebuilt my dissertation around them. Most of what I
-    know about deep learning I taught myself in the two years since, working on a
-    problem where the training data did not exist and had to be made.</p>
+    <p>I came to AI/ML from the planetary geology side. My undergraduate and
+    master's work focused on Antarctic geochemistry, using the McMurdo Dry Valleys as
+    a stand-in for Mars. Then, during my Ph.D., I went to a NASA AI workshop in 2024
+    and saw how these methods could be applied to planetary geoscience problems. So I
+    rebuilt my dissertation around them. I taught myself deep learning by building
+    the detection pipeline that work required, on a problem where the training data
+    didn't exist and had to be made.</p>
 
-    <p>Most of what I do sits between a model and a scientific claim. I am
-    comfortable at both ends, building and evaluating the pipeline and then
-    defending what its output does and does not support. That work is not specific
-    to my own field, and researchers outside it come to me for it: I have recently
-    been helping a paleobiology group apply machine learning to their data
-    [REPLACE: adjust the verb to match reality], and I work regularly with domain
-    experts and collaborators outside academia who are not machine learning people.</p>
+    <p>Most of what I do sits in the space between a model and a scientific claim:
+    build the pipeline, evaluate it honestly, then defend what its output does and
+    doesn't support. The domain changes but the problem doesn't: scarce labels, a
+    large archive, and a result someone has to stake a decision on. That combination
+    shows up everywhere, which is why a paleobiology group recently brought me in to
+    help apply machine learning to their data, and why a lot of my day-to-day is
+    translating between models and the domain experts who don't build them, or
+    bringing junior contributors up to speed on the technical side.</p>
 
-    <p>I am good at explaining novel technical work in approachable language, at
-    framing why a problem matters to people who do not already work on it, and at
-    making the case for a direction to the people who decide whether it gets
-    resourced. I have also led junior contributors on technical work.</p>
-
-    <p>When the tooling I need does not exist, I build it. Labels were the binding
-    constraint on my dissertation work, so I built an annotation application to
-    remove it, and I have since built a verification layer that enforces
-    source-checking and evidence standards in my own AI-assisted workflow. I also
-    spend real effort deciding whether a problem calls for a model at all. Some of
-    my work has been establishing that a question was not answerable with the data
-    available, which is a less satisfying result to report and a more useful one
-    to have.</p>
+    <p>When the tooling I need doesn't exist, I build it. Labels were the bottleneck
+    on my dissertation, so I built an annotation app to clear it. I've since built a
+    verification layer that holds my AI-assisted work to source-checking and evidence
+    standards, because I'd rather catch my own errors than have a reviewer do it. And
+    I spend real effort deciding whether a problem calls for a model at all. Some of
+    my work has been showing that a question wasn't answerable with the data
+    available, which is a less satisfying result to report and a more useful one to
+    have.</p>
   </div>
 
   <div class="rail">
