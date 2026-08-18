@@ -36,7 +36,7 @@ page-layout: full
   <div class="prose">
     <p>I'm a PhD candidate in Earth and Planetary Sciences at the University of
     Tennessee, Knoxville, working with Dr. Bradley J. Thomson and defending in
-    Spring 2027. After that, I'm headed for applied and research scientist roles in
+    Spring 2027. After that, I'm looking for applied and research scientist roles in
     Earth observation, geospatial machine learning, and AI for science.</p>
 
     <p>I came to AI/ML from the planetary geology side. My undergraduate and
