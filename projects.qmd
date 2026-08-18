@@ -22,10 +22,21 @@ page-layout: full
 
   <div class="entry">
     <h3>From raw HiRISE tiles to measured landforms</h3>
-    <p>REPLACE: two to four sentences on the full pipeline. Detection of thermal
-    contraction polygons in orbital imagery, then classification of fracture
-    junction geometry (T, Y, X types) as a measurable variable. Say in one
-    sentence why the junction classes are hard to separate.</p>
+    <p>Frozen ground on Mars cracks into polygons much as it does on Earth, and the
+    way those cracks meet is a record of what the climate did. A crack that stops
+    against another says the ground cracked once, in sequence. Three cracks meeting
+    symmetrically say it froze and thawed repeatedly. Cracks that run straight
+    through each other say ice filled the older fractures before new ones opened.</p>
+
+    <p>Mars has more than 100,000 orbital images. Junction types have been surveyed
+    by hand exactly once. I built a pipeline that finds these junctions and
+    classifies them, labeling 84% correctly overall and 75% when the four types are
+    weighted equally, since the rarer types are the hard ones. It needs as few as 25
+    to 50 junctions to tell one terrain from another.</p>
+
+    <p>On 19 images of western Utopia Planitia, the junction mix shifts with latitude
+    the way the climate history predicts, and independent ice-stability proxies agree.
+    That is a climate signal recovered at a scale hand-mapping cannot reach.</p>
 
     <p>A planet's worth of imagery is far too much to download, so the pipeline
     reads only the small piece of each image it needs, directly from the archive,
@@ -36,14 +47,12 @@ page-layout: full
 
     <img src="images/step4-classified.png" alt="Classified junction network">
 
-    <p class="result">Martian fracture junction classification.</p>
-
     <p class="caveat">The classification method and pilot deployment are under
     review at JGR: Machine Learning and Computation, submitted April 2026, not yet
-    accepted. Detection metrics are from the planet-scale deployment in
-    preparation. Train and test splits for the detector are made at the tile level,
-    so adjacent tiles from the same image can appear in both; reported detection
-    metrics should be read as an upper bound on generalization to unseen scenes.</p>
+    accepted. The planet-scale deployment is in preparation. Train and test splits
+    for the detector are made at the tile level, so adjacent tiles from the same
+    image can appear in both, and its performance should be read as an upper bound
+    on generalization to unseen scenes.</p>
 
     <p class="links"><span>Code released on acceptance</span></p>
     <span class="entry-label">Under review · scale-up in progress</span>
@@ -53,24 +62,36 @@ page-layout: full
     <h3>Training on Earth, deploying on Mars</h3>
     <p>Can an AI vision model trained only on orbital Earth images identify similar
     landforms on Mars? Geologists have reasoned by terrestrial analogy for decades;
-    this asks whether the analogy survives being made computational. I trained
-    segmentation models on three Earth landform classes, arctic tundra polygons and
-    two classes of desert channel network [REPLACE: name the two], and evaluated them
-    on Mars orbital imagery, asking where the analogy held and what, if anything,
-    still had to come from Mars.</p>
+    this project asked whether the analogy survives being made computational. I
+    trained segmentation models on three Earth landform classes, arctic tundra
+    polygons, inverted channels, and valley networks, and evaluated them on Mars
+    orbital imagery, asking where the analogy held and what, if anything, still had
+    to come from Mars.</p>
 
-    <p>The analogy carried real signal for some landforms and hit a resolution floor
-    for others. That boundary is the useful part of the result: it says which
-    terrestrial training data is worth collecting for a given target and which is not.
-    REPLACE: name which landforms fell on which side, and the one design decision a
-    reviewer would question.</p>
+    <p>The three landforms gave three different answers. Valley networks hinted at
+    real transfer, but the handful of well-mapped martian examples was too small to
+    prove it. The ridged riverbeds were the hard failure: at the resolution of
+    Mars-wide imagery, a model trained on Earth did no better than one that simply
+    labels the entire image a riverbed. The polygonal terrain succeeded. An
+    Earth-trained model found martian polygonal ground, and the same model stripped
+    of its Earth training could not, a margin that isolates what the Earth analogy
+    itself contributes.</p>
+
+    <p>So what crossed the planetary gap, and what did not? Form crossed: the
+    geometry that makes a landform recognizable. Scale is where the analogy strains,
+    since martian landforms run several times larger than their Earth counterparts,
+    a mismatch Earth's examples cannot represent. And one simple fact never crossed
+    at all: that these landforms exist on Mars. In one experiment, a model taught
+    only from its own mistakes concluded that Mars had no such landforms, while
+    staying just as accurate on Earth. Earth can teach a model what to look for.
+    Only Mars can tell it there is something there to find.</p>
 
     <img src="images/REPLACE-transfer.png" alt="REPLACE">
 
     <p class="result">Quantitative results withheld pending publication. For scale
-    of the problem: on Earth alone, detection AP for this landform class falls from
-    0.73 to 0.25 across cross-sensor transfer scenarios (Zhang et al., 2020). The
-    Earth-to-Mars gap spans planet, sensor, and resolution at once.</p>
+    of the problem: on Earth alone, detection performance for polygonal terrain falls
+    by roughly two thirds when a model is moved between sensors (Zhang et al., 2020).
+    The Earth-to-Mars gap spans planet, sensor, and resolution at once.</p>
 
     <p class="links">
       <a href="https://www.hou.usra.edu/meetings/lpsc2026/pdf/1717.pdf">LPSC 2026 abstract 1717</a>

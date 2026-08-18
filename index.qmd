@@ -70,10 +70,11 @@ page-layout: full
       <img class="card-fig" src="images/step4-classified.png" alt="">
       <span class="card-status">Under review · scale-up in progress</span>
       <h3>From raw HiRISE tiles to measured landforms</h3>
-      <p class="card-line">REPLACE: one sentence a non-specialist can follow. An
-      end-to-end pipeline that detects surface features in orbital images, then
-      measures their geometry as a quantitative variable.</p>
-      <p class="card-metric">Junction classification macro F1 0.77 · TCP detection AP50 69.9 ± 0.6</p>
+      <p class="card-line">The way cracks meet in frozen ground records what the
+      climate did. Mars has over 100,000 orbital images and this had been surveyed by
+      hand exactly once, so I built a pipeline that does it automatically.</p>
+      <p class="card-metric">84% of junctions labeled correctly · a climate signal
+      recovered at a scale hand-mapping cannot reach</p>
       <p class="card-links">
         <a href="projects.html">Details</a>
         <span>Code on acceptance</span>
@@ -85,10 +86,10 @@ page-layout: full
       <span class="card-status">Results in preparation</span>
       <h3>Training on Earth, deploying on Mars</h3>
       <p class="card-line">Can a vision model trained only on Earth imagery find the
-      same landforms on Mars? I trained segmentation models on three Earth landform
-      classes, then tested them on Mars.</p>
-      <p class="card-metric">The analogy carried real signal for some landforms and
-      hit a resolution floor for others</p>
+      same landforms on Mars? I trained segmentation models on arctic tundra polygons,
+      inverted channels, and valley networks, then tested them on Mars.</p>
+      <p class="card-metric">Earth can teach a model what to look for. Only Mars can
+      tell it there is something there to find.</p>
       <p class="card-links">
         <a href="projects.html">Details</a>
         <a href="https://www.hou.usra.edu/meetings/lpsc2026/pdf/1717.pdf">LPSC 2026</a>
