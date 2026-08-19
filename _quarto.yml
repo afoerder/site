@@ -5,6 +5,7 @@ project:
     - images/
     - field.js
     - cv.pdf
+    - resume.pdf
 
 website:
   title: "Andrew Foerder"

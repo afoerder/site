@@ -91,7 +91,8 @@ page-layout: full
     <h4>Find me</h4>
     <ul class="rail-links">
       <li><a href="mailto:andrewfoerder66@gmail.com">Email</a></li>
-      <li><a href="cv.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a></li>
+      <li><a href="resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a></li>
+      <li><a href="cv.pdf" target="_blank" rel="noopener">Academic CV (PDF)</a></li>
       <li><a href="https://github.com/afoerder">GitHub</a></li>
       <li><a href="https://scholar.google.com/citations?user=LkSwiQIAAAAJ&hl=en">Google Scholar</a></li>
       <li><a href="https://www.linkedin.com/in/andrew-foerder-79a830b0">LinkedIn</a></li>
