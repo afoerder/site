@@ -137,7 +137,7 @@ page-layout: full
     </div>
 
     <div class="card">
-      <img class="card-fig card-fig-contain" src="images/predictability-gap-card.png" alt="Effect-size axis showing the measured signal falling short of the detection floor">
+      <img class="card-fig" src="images/predictability-gap-card.png" alt="Effect-size axis showing the measured signal falling short of the detection floor">
       <h3>Knowing a record's limit</h3>
       <p class="card-line">Can a Martian dust storm be predicted? Researchers have
       reported warning signs for decades, yet none has been shown to beat two

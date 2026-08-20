@@ -751,12 +751,7 @@ main.content {
   .card h3.split-head .sep { display: none; }
 }
 
-/* Charts must not be cropped the way photographs can be */
-.card-fig-contain {
-  object-fit: contain;
-  background: #FFFFFF;
-  box-shadow: inset 0 0 0 1px #14181A;
-}
+
 
 /* Figures inside project entries carry the same trim as the cards */
 .entry > img {
