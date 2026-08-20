@@ -11,7 +11,7 @@ page-layout: full
     <div class="hero-text">
     <div class="hero-id">
       <div class="hero-name">Andrew Foerder</div>
-      <div class="hero-role">Machine learning · Earth and planetary remote sensing</div>
+      <div class="hero-role">PhD candidate, Earth &amp; Planetary Sciences</div>
     </div>
 
     <h1 class="hero-claim">Applying AI to help solve problems on Earth and Elsewhere</h1>
