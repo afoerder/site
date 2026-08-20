@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-5ece0e4a5ffbf02e28d4d657a8c77456.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-95754bdf3a6cc76343e46837b8d794cd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9d97c73fe13b491075348d362b6ddd32.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -175,6 +175,17 @@ ul.task-list li input[type="checkbox"] {
         <li class="stage-step" data-i="3" tabindex="0">04 Junctions</li>
       </ol>
     </div>
+
+    <p>Training the classifier meant labeling junctions by hand, one at a time, so I
+    built a tool for it: the skeleton for context, the crosshair on the node in
+    question, four keys for the four types, and a running count of what was left.</p>
+
+    <video class="demo" controls="" preload="none" playsinline="" poster="images/labeler-poster.jpg">
+      <source src="images/labeler.mp4" type="video/mp4">
+      Your browser does not support embedded video.
+    </video>
+    <p class="figcaption">TYXN Labeler, the annotation tool I built to produce the
+    junction training set. Code released with the paper.</p>
 
     <p class="caveat">The classification method and pilot deployment are under
     review at JGR: Machine Learning and Computation, submitted April 2026, not yet
