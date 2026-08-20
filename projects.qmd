@@ -9,10 +9,11 @@ page-layout: full
 <div class="page-head">
   <div class="page-head-inner">
     <div class="kicker">Projects</div>
-    <h1>What I've built, and what I've found</h1>
-    <p>Each entry states the problem, what I built, and where the result currently
-    stands. Status labels are literal. Work that is unpublished or in preparation is
-    marked as such, and limitations are stated alongside results.</p>
+    <h1>Where I've pointed AI</h1>
+    <p>Three problems: two in imagery, one that has no images in it at all. Each
+    entry states the problem, what I built, and where the result currently stands.
+    Status labels are literal. Work that is unpublished or in preparation is marked
+    as such, and limitations are stated alongside results.</p>
   </div>
 </div>
 
@@ -21,7 +22,7 @@ page-layout: full
 <div class="band-narrow">
 
   <div class="entry">
-    <h3>From raw HiRISE tiles to measured landforms</h3>
+    <h3>Martian paleoclimate by counting cracks</h3>
     <p>Frozen ground on Mars cracks into polygons much as it does on Earth, and the
     way those cracks meet is a record of what the climate did. A crack that stops
     against another says the ground cracked once, in sequence. Three cracks meeting
@@ -143,13 +144,19 @@ page-layout: full
     risk on Mars must, for now, rest on seasonal climatology, and any future forecast
     claim can be checked against the bar this work sets before anyone acts on it.</p>
 
-    <img src="images/predictability-gap.png" alt="Predictability budget in units of sigma">
+    <img src="images/predictability-gap.png" alt="Effect-size axis in sigma showing the largest measured effect at 0.32 with a 95% upper limit of 0.80, an association floor of 0.59 to 0.81, and an 80%-power detection floor of 1.7 to 1.8">
+    <p class="figcaption">The measured signal falls short of the bar it would have to clear.
+    Point and whisker: largest season-controlled effect measured, with its one-sided 95% upper
+    limit. Bands: the effect size this record and design would need to establish an association,
+    and to detect a precursor at 80% power. Closing the gap by observation would take at least
+    222 to 315 Mars years; the usable record spans about 6.6.</p>
 
     <p class="result">For this record and design, detecting a precursor at 80%
-    power requires roughly 1.7 to 1.8σ. The largest season-controlled effect
-    measured is 0.32σ, one-sided 95% upper limit 0.80σ. Closing that gap by
-    observation would take at least 150 Mars years; the modern record spans
-    about 8.</p>
+    power requires roughly 1.7σ, or 1.8σ and above once storm clustering is
+    counted. The largest season-controlled effect measured is 0.32σ, with a
+    one-sided 95% upper limit of 0.80σ. Closing that gap by observation would
+    take at least 222 to 315 Mars years, and roughly double that once
+    clustering is counted; the usable record spans about 6.6.</p>
 
     <p class="caveat">This is a predictability assessment and not a forecasting
     system. Methods and decision thresholds were committed to version control before
