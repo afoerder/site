@@ -71,7 +71,6 @@ page-layout: full
     Boulder, as well as in Canyonlands for an annual hundred-mile ride with
     friends.</p>
 
-    <img class="aspens" src="images/alpine.jpg" alt="Rock-hopping a stream below a snow-dusted peak in the Colorado high country">
 
     <p>The person you get is the same one on this
     page: incurably curious, and always working on getting better at what I do.
@@ -105,6 +104,8 @@ page-layout: full
       <li><a href="https://www.linkedin.com/in/andrew-foerder-79a830b0">LinkedIn</a></li>
       <li><a href="https://orcid.org/0009-0001-4430-0844">ORCID</a></li>
     </ul>
+
+    <img class="rail-photo" src="images/alpine.jpg" alt="Rock-hopping a stream below a snow-dusted peak in the Colorado high country">
   </div>
 
 </div>

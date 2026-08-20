@@ -798,14 +798,13 @@ main.content {
 }
 
 /* One photograph, sized as a band so it reads as texture rather than a snapshot */
-.aspens {
+/* One photograph, in the rail beneath the links. No trim: it reads as a
+   window rather than a framed figure, which keeps it apart from the data. */
+.rail-photo {
   display: block;
   width: 100%;
-  /* Portrait orientation: cap the width so it doesn't run the page */
-  max-width: 460px;
+  max-width: 100%;
   box-sizing: border-box;
   height: auto;
-  margin: 0.4rem 0 1.6rem !important;
-  outline: 1px solid #14181A;
-  outline-offset: -1px;
+  margin: 1.8rem 0 0 !important;
 }
