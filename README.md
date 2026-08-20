@@ -1,6 +1,6 @@
-# Personal site
+# andrewfoerder.com
 
-Quarto site published to GitHub Pages.
+Personal site. Quarto, published to GitHub Pages.
 
 ## Local preview
 
@@ -8,44 +8,31 @@ Quarto site published to GitHub Pages.
 quarto preview
 ```
 
-## First-time publish
+## Publishing
 
-The GitHub Action will not work until the `gh-pages` branch exists, so run this
-once from your machine before relying on CI:
+Pushes to `main` deploy automatically via `.github/workflows/publish.yml`.
+To deploy manually:
 
 ```bash
 quarto publish gh-pages
 ```
 
-After that, pushes to `main` trigger `.github/workflows/publish.yml`.
+The workflow needs two repository settings:
 
-Two settings to check in the repository, both under Settings:
-
-- **Actions → General → Workflow permissions** must be set to read and write.
-- **Pages → Build and deployment** should deploy from the `gh-pages` branch, root.
-
-## Custom domain
-
-Add a `CNAME` file at the project root containing only your domain, and point
-your DNS at GitHub Pages. Then set `site-url` in `_quarto.yml` to match.
+- **Settings → Actions → General → Workflow permissions**: read and write
+- **Settings → Pages → Build and deployment**: deploy from `gh-pages`, root
 
 ## Files
 
 ```
-_quarto.yml      Site config, navbar, fonts
-theme.scss       Design system (colors, type, annotation brackets)
-index.qmd        Landing page
-projects.qmd     Project entries
-publications.qmd Publication list
-about.qmd        Bio and contact
-images/          Figures. hero-detection.png is referenced by index.qmd
-cv.pdf           Referenced by index.qmd and about.qmd; not yet added
-```
-
-## Before publishing
-
-Search the project for `REPLACE` and resolve every instance.
-
-```bash
-grep -rn "REPLACE" --include="*.qmd" --include="*.yml" .
+_quarto.yml       Site config, navbar, social meta
+theme.scss        Design system: color, type, layout
+index.qmd         Landing page: hero, project cards, about, publications
+projects.qmd      Full project entries
+publications.qmd  Complete publication list
+field.js          Animated hero background; pipeline stage cycling
+images/           Figures and photographs
+cv.pdf            Academic CV
+resume.pdf        Industry resume
+CNAME             Custom domain for GitHub Pages
 ```
