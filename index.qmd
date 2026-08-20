@@ -1,7 +1,7 @@
 ---
 title: ""
+pagetitle: "Andrew Foerder"
 page-layout: full
-image: images/social-card.png
 ---
 
 ```{=html}
@@ -64,8 +64,7 @@ image: images/social-card.png
     <p>I also put real effort into deciding whether a problem even calls for an AI
     model, and I'm willing to say so when it doesn't. Some of my work has shown that
     a question wasn't answerable with the data available, which is a less satisfying
-    result to report but a more useful one to have. Preferring the useful answer over
-    the satisfying one isn't a research method, it's just how I'm wired.</p>
+    result to report but a more useful one to have.</p>
 
     <p>Away from the screen I'm usually getting green on my eyeballs, in my garden
     where I grow pumpkins timed for October, or on the rides and hikes around
@@ -73,12 +72,7 @@ image: images/social-card.png
     friends.</p>
 
 
-    <p>The person you get is the same one on this
-    page: incurably curious, and always working on getting better at what I do.
-    I'm not interested in being some polished version of myself at work, and I
-    genuinely believe that openness is what lets people with different skills combine
-    them and point them at a common goal. If that sounds like someone you'd want to
-    work with, get in touch.</p>
+    <p>If that sounds like someone you'd want to work with, get in touch.</p>
   </div>
 
   <div class="rail">
@@ -91,6 +85,9 @@ image: images/social-card.png
       <li>B.A. Geology-Biology<br>
         <span class="sub">Brown University · 2018</span></li>
     </ul>
+
+    <h4>Based in</h4>
+    <p class="sub">Boulder, Colorado. PhD at the University of Tennessee, Knoxville.</p>
 
     <h4>Eligibility</h4>
     <p class="sub">U.S. citizen, eligible to obtain a security clearance.</p>
@@ -136,7 +133,7 @@ image: images/social-card.png
     <div class="card">
       <img class="card-fig" src="images/transfer.png" alt="Earth training imagery beside the model's Mars predictions">
       <h3 class="split-head">
-        <span>Training on Earth</span><span class="sep">....</span><span>deploying on Mars</span>
+        <span>Training on Earth</span><span class="sep">,</span><span>deploying on Mars</span>
       </h3>
       <p class="card-line">Can an AI vision model trained only on Earth imagery find the
       same landforms on Mars? I trained segmentation models on polygon-patterned

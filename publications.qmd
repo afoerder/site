@@ -1,5 +1,6 @@
 ---
 title: ""
+pagetitle: "Publications · Andrew Foerder"
 page-layout: full
 ---
 
@@ -10,9 +11,8 @@ page-layout: full
   <div class="page-head-inner">
     <div class="kicker">Publications</div>
     <h1>Peer-reviewed work and abstracts</h1>
-    <p>Grouped by research line, reverse chronological within each. Work under review
-    is labeled as such. Each peer-reviewed entry carries a one-sentence plain-language
-    summary of what it found.</p>
+    <p>Grouped by research line, reverse chronological within each. Work under
+    review is labeled as such.</p>
   </div>
 </div>
 
@@ -26,10 +26,6 @@ page-layout: full
     <div class="cite"><strong>Foerder, A. B.</strong>, Magocs, B. L., Thomson, B. J.,
     and Bhidya, H. Toward paleoclimate mapping on Mars by detecting and classifying
     fracture junctions with machine learning.</div>
-    <p class="plain">REPLACE: one plain-language sentence saying what the paper found.
-    Something like: an automated pipeline that finds fracture networks in orbital
-    images and classifies their junction geometry, turning a hand-mapped task into a
-    measurable variable at scale.</p>
   </div>
 
   <div class="pub">
@@ -39,14 +35,21 @@ page-layout: full
     Volatile-Influenced Landforms on Mars. <em>57th Lunar and Planetary Science
     Conference</em>, abstract #1717. Bibcode 2026LPICo3160.1717F.
     <a href="https://www.hou.usra.edu/meetings/lpsc2026/pdf/1717.pdf">PDF</a></div>
-    <p class="plain">We trained a vision model on Earth landforms and carried it to
-    Mars, applying terrestrial analogy digitally to constrain how these features
-    formed and what they record about past climate.</p>
   </div>
 </div>
 
 <div class="band-narrow">
   <div class="section-head">Planetary geochemistry and Mars analogues</div>
+
+  <div class="pub">
+    <span class="venue">Cold Regions Science and Technology · 2025</span>
+    <div class="cite">Burton, Z. F. M., Koeberl, C., Bishop, J. L., Englert, P. A. J.,
+    Smith, M. P., <strong>Foerder, A. B.</strong>, and Gibson, E. K. (2025) Controls on
+    cold-climate critical minerals: regolith-hosted REE at three polar desert salt ponds
+    (McMurdo Dry Valleys, Antarctica). <em>Cold Regions Science and Technology</em>
+    239: 104583.
+    <a href="https://doi.org/10.1016/j.coldregions.2025.104583">doi:10.1016/j.coldregions.2025.104583</a></div>
+  </div>
 
   <div class="pub">
     <span class="venue">American Mineralogist · 2024</span>
@@ -55,7 +58,6 @@ page-layout: full
     Antarctica: A chemically altering environment with martian analog potential.
     <em>American Mineralogist</em> 109: 682–700.
     <a href="https://doi.org/10.2138/am-2022-8779">doi:10.2138/am-2022-8779</a></div>
-    <p class="plain">REPLACE: one plain-language sentence saying what the paper found.</p>
   </div>
 
   <div class="pub">
@@ -70,7 +72,7 @@ page-layout: full
   <div class="section-head">Conference abstracts</div>
 
   <div class="pub">
-    <span class="venue">AGU 2023</span>
+    <span class="venue">AGU 2023 · Poster</span>
     <div class="cite"><strong>Foerder, A. B.</strong>, Englert, P. A. J., Bishop, J. L.,
     Szynkiewicz, A. (2023) Sulfate mineralogy and concentrations of Don Juan Basin,
     Antarctica: A geochemical analog for aqueously altered environments on Mars.
@@ -78,7 +80,7 @@ page-layout: full
   </div>
 
   <div class="pub">
-    <span class="venue">LPSC 2023 · Abstract 2368</span>
+    <span class="venue">LPSC 2023 · Abstract 2368 · Poster</span>
     <div class="cite"><strong>Foerder, A. B.</strong>, Englert, P. A. J., Koeberl, C.,
     Bishop, J. L., Gibson, E. K. (2023) A Gradient of Chemical Alteration in Don Juan
     Basin, Antarctica, and Applications to Mars. <em>54th Lunar and Planetary Science
@@ -87,7 +89,7 @@ page-layout: full
   </div>
 
   <div class="pub">
-    <span class="venue">LPSC 2023 · Abstract 2418</span>
+    <span class="venue">LPSC 2023 · Abstract 2418 · Poster</span>
     <div class="cite"><strong>Foerder, A. B.</strong>, Englert, P. A. J., Koeberl, C.,
     Bishop, J. L., Gibson, E. K. (2023) Accounting for Salt Dilution in the Chemical
     Index of Alteration: Applications to Don Juan Basin, Antarctica, and Mars.
@@ -95,7 +97,7 @@ page-layout: full
   </div>
 
   <div class="pub">
-    <span class="venue">GSA Connects · 2021</span>
+    <span class="venue">GSA Connects · 2021 · Poster</span>
     <div class="cite">Englert, P. A. J., Bishop, J. L., <strong>Foerder, A. B.</strong>,
     Bailey, A., Burton, Z. F. M., Patel, S., Koeberl, C., Gibson, E. K. (2021)
     Weathering and Chemical Alteration in Wright Valley, Antarctica, as an Analog for
@@ -104,7 +106,7 @@ page-layout: full
   </div>
 
   <div class="pub">
-    <span class="venue">LPSC 2020 · Abstract 2298</span>
+    <span class="venue">LPSC 2020 · Abstract 2298 · Poster</span>
     <div class="cite"><strong>Foerder, A. B.</strong>, Englert, P. A. J., Bishop, J. L.,
     Koeberl, C., Gibson, E. K. (2020) Rare Earth Element Abundances and Chemical
     Alteration in Microenvironments of the McMurdo Dry Valleys. <em>51st Lunar and

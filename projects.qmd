@@ -1,5 +1,6 @@
 ---
 title: ""
+pagetitle: "Projects · Andrew Foerder"
 page-layout: full
 ---
 
@@ -114,10 +115,8 @@ page-layout: full
     &copy; CNES (2016), Distribution Airbus DS; &copy; Airbus DS (2024); &copy; 2010, 2018 Maxar Technologies.
     Mars imagery NASA/JPL-Caltech/MSSS (CTX) and NASA/JPL-Caltech/UArizona (HiRISE).</p>
 
-    <p class="result">Quantitative results withheld pending publication. For scale
-    of the problem: on Earth alone, detection performance for polygonal terrain falls
-    by roughly two thirds when a model is moved between sensors (Zhang et al., 2020).
-    The Earth-to-Mars gap spans planet, sensor, and resolution at once.</p>
+    <p class="result">Quantitative results withheld pending publication. The gap these
+    models had to cross spans planet, sensor, and resolution at once.</p>
 
     <p class="links">
       <a href="https://www.hou.usra.edu/meetings/lpsc2026/pdf/1717.pdf">LPSC 2026 abstract 1717</a>
