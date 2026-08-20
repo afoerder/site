@@ -142,9 +142,7 @@ page-layout: full
       reported warning signs for decades, yet none has been shown to beat two
       forecasts that cost nothing: what the season usually brings, and what the storm
       is already doing. So I asked whether the record holds enough storms to prove
-      that any warning sign works. It does not. Mars has produced only about a dozen
-      independent major storms since we began watching, and I measured how far short
-      of enough that falls.</p>
+      that any warning sign works.</p>
       <span class="card-status">In preparation</span>
     </div>
 
