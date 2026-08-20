@@ -230,6 +230,8 @@ main.content:has(.hero) { max-width: none; padding: 0 0 5rem 0; }
 .card-fig {
   display: block;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   background: #000;
@@ -571,6 +573,8 @@ main.content {
 .card-stage .stage-frame {
   position: relative;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   background: #000;
   border: 1px solid #14181A;
   aspect-ratio: 4 / 3;
@@ -758,6 +762,8 @@ main.content {
 .entry > img {
   display: block;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   height: auto;
   border: 1px solid #14181A;
   background: #FFFFFF;
