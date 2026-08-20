@@ -684,6 +684,8 @@ main.content {
   aspect-ratio: 4 / 3;
   background: #000;
   overflow: hidden;
+  outline: 1px solid #14181A;
+  outline-offset: -1px;
 }
 .entry-stage .stage-frame::before { content: none; }
 .entry-stage .stage-img {
@@ -691,7 +693,8 @@ main.content {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* Stage images are square; contain avoids cropping them in a 4:3 frame */
+  object-fit: contain;
   opacity: 0;
   transition: opacity 0.55s ease;
 }
