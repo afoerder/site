@@ -681,7 +681,8 @@ main.content {
 .entry-stage .stage-frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  /* Stage images are square: a square frame fills exactly, no crop, no bars */
+  aspect-ratio: 1 / 1;
   background: #000;
   overflow: hidden;
   outline: 1px solid #14181A;
@@ -693,8 +694,7 @@ main.content {
   inset: 0;
   width: 100%;
   height: 100%;
-  /* Stage images are square; contain avoids cropping them in a 4:3 frame */
-  object-fit: contain;
+  object-fit: cover;
   opacity: 0;
   transition: opacity 0.55s ease;
 }
