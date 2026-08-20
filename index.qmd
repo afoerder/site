@@ -71,7 +71,7 @@ page-layout: full
     Boulder, as well as in Canyonlands for an annual hundred-mile ride with
     friends.</p>
 
-    <img class="aspens" src="images/aspens.jpg" alt="Colorado aspens in autumn">
+    <img class="aspens" src="images/alpine.jpg" alt="Rock-hopping a stream below a snow-dusted peak in the Colorado high country">
 
     <p>The person you get is the same one on this
     page: incurably curious, and always working on getting better at what I do.

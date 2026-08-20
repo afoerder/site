@@ -801,7 +801,8 @@ main.content {
 .aspens {
   display: block;
   width: 100%;
-  max-width: 100%;
+  /* Portrait orientation: cap the width so it doesn't run the page */
+  max-width: 460px;
   box-sizing: border-box;
   height: auto;
   margin: 0.4rem 0 1.6rem !important;
