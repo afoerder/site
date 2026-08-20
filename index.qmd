@@ -126,7 +126,9 @@ page-layout: full
 
     <div class="card">
       <img class="card-fig" src="images/transfer.png" alt="Earth training imagery beside the model's Mars predictions">
-      <h3>Training on Earth, deploying on Mars</h3>
+      <h3 class="split-head">
+        <span>Training on Earth</span><span class="sep">....</span><span>deploying on Mars</span>
+      </h3>
       <p class="card-line">Can a vision model trained only on Earth imagery find the
       same landforms on Mars? I trained segmentation models on arctic tundra polygons,
       inverted channels, and valley networks, then tested them on Mars.</p>
