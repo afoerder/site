@@ -235,7 +235,8 @@ main.content:has(.hero) { max-width: none; padding: 0 0 5rem 0; }
   aspect-ratio: 4 / 3;
   object-fit: cover;
   background: #000;
-  box-shadow: inset 0 0 0 1px #14181A;
+  outline: 1px solid #14181A;
+  outline-offset: -1px;
 }
 .card-status {
   display: inline-block;
@@ -576,7 +577,8 @@ main.content {
   max-width: 100%;
   box-sizing: border-box;
   background: #000;
-  box-shadow: inset 0 0 0 1px #14181A;
+  outline: 1px solid #14181A;
+  outline-offset: -1px;
   aspect-ratio: 4 / 3;
   overflow: hidden;
 }
@@ -760,6 +762,7 @@ main.content {
   max-width: 100%;
   box-sizing: border-box;
   height: auto;
-  box-shadow: inset 0 0 0 1px #14181A;
+  outline: 1px solid #14181A;
+  outline-offset: -1px;
   background: #FFFFFF;
 }
