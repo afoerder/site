@@ -4,3 +4,7 @@ _site/
 
 /.quarto/
 **/*.quarto_ipynb
+
+index_*.qmd
+*_[0-9].qmd
+*_[0-9].scss
