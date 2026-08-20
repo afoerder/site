@@ -10,7 +10,7 @@ page-layout: full
   <div class="page-head-inner">
     <div class="kicker">Projects</div>
     <h1>Where I've pointed AI</h1>
-    <p>Three problems: two in imagery, one that has no images in it at all. Each
+    <p>Three problems: two in imagery, one in statistics. Each
     entry states the problem, what I built, and where the result currently stands.
     Status labels are literal. Work that is unpublished or in preparation is marked
     as such, and limitations are stated alongside results.</p>
