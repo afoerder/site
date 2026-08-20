@@ -808,3 +808,16 @@ main.content {
   height: auto;
   margin: 1.8rem 0 0 !important;
 }
+
+/* Screen-capture demo: same framing as the figures */
+.demo {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0.4rem 0 0.2rem !important;
+  background: #000;
+  outline: 1px solid #14181A;
+  outline-offset: -1px;
+}

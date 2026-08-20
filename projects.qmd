@@ -63,6 +63,18 @@ page-layout: full
       </ol>
     </div>
 
+    <p>Training the classifier meant labeling junctions by hand, one at a time, so I
+    built a tool for it: the skeleton for context, the crosshair on the node in
+    question, four keys for the four types, and a running count of what was left.</p>
+
+    <video class="demo" controls preload="none" playsinline
+           poster="images/labeler-poster.jpg">
+      <source src="images/labeler.mp4" type="video/mp4">
+      Your browser does not support embedded video.
+    </video>
+    <p class="figcaption">TYXN Labeler, the annotation tool I built to produce the
+    junction training set. Code released with the paper.</p>
+
     <p class="caveat">The classification method and pilot deployment are under
     review at JGR: Machine Learning and Computation, submitted April 2026, not yet
     accepted. The planet-scale deployment is in preparation. Train and test splits
