@@ -692,6 +692,9 @@ main.content {
 }
 .entry-stage .stage-frame::before { content: none; }
 .entry-stage .stage-img {
+  /* must override the generic rule's position: absolute */
+  position: relative;
+  inset: auto;
   display: block;
   width: 100%;
   height: auto;
