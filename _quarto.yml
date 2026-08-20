@@ -9,12 +9,15 @@ project:
     - CNAME
     - favicon.png
     - apple-touch-icon.png
+    - favicon.png
+    - apple-touch-icon.png
 
 website:
   title: "Andrew Foerder"
   description: "Deep learning and computer vision for detection and classification in imagery, from the ground to orbit."
   site-url: "https://andrewfoerder.com"
   image: images/social-card.png
+  favicon: favicon.png
   favicon: favicon.png
   open-graph: true
   twitter-card: true
