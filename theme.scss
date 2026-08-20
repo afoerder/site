@@ -235,6 +235,7 @@ main.content:has(.hero) { max-width: none; padding: 0 0 5rem 0; }
   border-bottom: none !important;
 }
 .card-fig {
+  margin: 0 !important;
   display: block;
   width: 100%;
   max-width: 100%;
@@ -695,6 +696,8 @@ main.content {
   /* must override the generic rule's position: absolute */
   position: relative;
   inset: auto;
+  /* Quarto gives images a vertical margin; it makes the frame taller than the picture */
+  margin: 0 !important;
   display: block;
   width: 100%;
   height: auto;
@@ -777,6 +780,7 @@ main.content {
 
 /* Figures inside project entries carry the same trim as the cards */
 .entry > img {
+  margin: 0 0 0.2rem !important;
   display: block;
   width: 100%;
   max-width: 100%;
