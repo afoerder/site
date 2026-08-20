@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://andrewfoerder.com/publications.html</loc>
-    <lastmod>2026-08-20T20:49:45.489Z</lastmod>
-  </url>
-  <url>
-    <loc>https://andrewfoerder.com/projects.html</loc>
-    <lastmod>2026-08-20T20:49:45.483Z</lastmod>
+    <loc>https://andrewfoerder.com/MAINTENANCE.html</loc>
+    <lastmod>2026-08-20T21:01:31.713Z</lastmod>
   </url>
   <url>
     <loc>https://andrewfoerder.com/index.html</loc>
-    <lastmod>2026-08-20T20:49:45.477Z</lastmod>
+    <lastmod>2026-08-20T21:01:31.762Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewfoerder.com/projects.html</loc>
+    <lastmod>2026-08-20T21:01:31.762Z</lastmod>
+  </url>
+  <url>
+    <loc>https://andrewfoerder.com/publications.html</loc>
+    <lastmod>2026-08-20T21:01:31.762Z</lastmod>
   </url>
 </urlset>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Publications · Andrew Foerder – Andrew Foerder</title>
+<title>maintenance – Andrew Foerder</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,6 +25,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -63,19 +98,21 @@ ul.task-list li input[type="checkbox"] {
 <script type="module" src="field.js"></script>
 
 
-<meta property="og:title" content="Publications · Andrew Foerder">
+<meta property="og:title" content="Andrew Foerder">
+<meta property="og:description" content="Deep learning and computer vision for detection and classification in imagery, from the ground to orbit.">
 <meta property="og:image" content="https://andrewfoerder.com/images/social-card.png">
 <meta property="og:site_name" content="Andrew Foerder">
 <meta property="og:image:height" content="630">
 <meta property="og:image:width" content="1200">
-<meta name="twitter:title" content="Publications · Andrew Foerder">
+<meta name="twitter:title" content="Andrew Foerder">
+<meta name="twitter:description" content="Deep learning and computer vision for detection and classification in imagery, from the ground to orbit.">
 <meta name="twitter:image" content="https://andrewfoerder.com/images/social-card.png">
 <meta name="twitter:image-height" content="630">
 <meta name="twitter:image-width" content="1200">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./publications.html" aria-current="page"> 
+    <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
 </ul>
@@ -106,127 +143,82 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
-<canvas class="site-field" aria-hidden="true"></canvas>
-
-<div class="page-head">
-  <div class="page-head-inner">
-    <div class="kicker">Publications</div>
-    <h1>Peer-reviewed work and abstracts</h1>
-    <p>Grouped by research line, reverse chronological within each. Work under
-    review is labeled as such.</p>
-  </div>
-</div>
-
-<div class="sheet">
-
-<div class="band-narrow">
-  <div class="section-head">Machine learning and remote sensing</div>
-
-  <div class="pub">
-    <span class="venue">Under review · JGR Machine Learning and Computation</span>
-    <div class="cite"><strong>Foerder, A. B.</strong>, Magocs, B. L., Thomson, B. J.,
-    and Bhidya, H. Toward paleoclimate mapping on Mars by detecting and classifying
-    fracture junctions with machine learning.</div>
-  </div>
-
-  <div class="pub">
-    <span class="venue">LPSC 2026 · Abstract 1717 · Poster</span>
-    <div class="cite"><strong>Foerder, A. B.</strong>, Thomson, B. J., Magocs, B. L. (2026)
-    Earth-to-Mars Transfer Learning: A Novel Method for the Automatic Detection of
-    Volatile-Influenced Landforms on Mars. <em>57th Lunar and Planetary Science
-    Conference</em>, abstract #1717. Bibcode 2026LPICo3160.1717F.
-    <a href="https://www.hou.usra.edu/meetings/lpsc2026/pdf/1717.pdf">PDF</a></div>
-  </div>
-</div>
-
-<div class="band-narrow">
-  <div class="section-head">Planetary geochemistry and Mars analogues</div>
-
-  <div class="pub">
-    <span class="venue">Cold Regions Science and Technology · 2025</span>
-    <div class="cite">Burton, Z. F. M., Koeberl, C., Bishop, J. L., Englert, P. A. J.,
-    Smith, M. P., <strong>Foerder, A. B.</strong>, and Gibson, E. K. (2025) Controls on
-    cold-climate critical minerals: regolith-hosted REE at three polar desert salt ponds
-    (McMurdo Dry Valleys, Antarctica). <em>Cold Regions Science and Technology</em>
-    239: 104583.
-    <a href="https://doi.org/10.1016/j.coldregions.2025.104583">doi:10.1016/j.coldregions.2025.104583</a></div>
-  </div>
-
-  <div class="pub">
-    <span class="venue">American Mineralogist · 2024</span>
-    <div class="cite"><strong>Foerder, A. B.</strong>, Englert, P. A. J., Bishop, J. L.,
-    Koeberl, C., Burton, Z. F. M., Patel, S., and Gibson, E. K. (2024) Don Juan Basin,
-    Antarctica: A chemically altering environment with martian analog potential.
-    <em>American Mineralogist</em> 109: 682–700.
-    <a href="https://doi.org/10.2138/am-2022-8779">doi:10.2138/am-2022-8779</a></div>
-  </div>
-
-  <div class="pub">
-    <span class="venue">Master's thesis · University of Hawai'i at Mānoa · 2020</span>
-    <div class="cite"><strong>Foerder, A. B.</strong> (2020) Chemical Alteration and Soil
-    Provenance of Polar Desert Sediments from the McMurdo Dry Valleys, Antarctica:
-    An Analog for Alteration Processes on Mars.</div>
-  </div>
-</div>
-
-<div class="band-narrow">
-  <div class="section-head">Conference abstracts</div>
-
-  <div class="pub">
-    <span class="venue">AGU 2023 · Poster</span>
-    <div class="cite"><strong>Foerder, A. B.</strong>, Englert, P. A. J., Bishop, J. L.,
-    Szynkiewicz, A. (2023) Sulfate mineralogy and concentrations of Don Juan Basin,
-    Antarctica: A geochemical analog for aqueously altered environments on Mars.
-    <em>AGU Fall Meeting 2023</em>, abstract #1259082. Bibcode 2023AGUFM.P53D2785F.</div>
-  </div>
-
-  <div class="pub">
-    <span class="venue">LPSC 2023 · Abstract 2368 · Poster</span>
-    <div class="cite"><strong>Foerder, A. B.</strong>, Englert, P. A. J., Koeberl, C.,
-    Bishop, J. L., Gibson, E. K. (2023) A Gradient of Chemical Alteration in Don Juan
-    Basin, Antarctica, and Applications to Mars. <em>54th Lunar and Planetary Science
-    Conference</em>.
-    <a href="https://ucrisportal.univie.ac.at/en/publications/a-gradient-of-chemical-alteration-in-don-juan-basin-antarctica-an/">Record</a></div>
-  </div>
-
-  <div class="pub">
-    <span class="venue">LPSC 2023 · Abstract 2418 · Poster</span>
-    <div class="cite"><strong>Foerder, A. B.</strong>, Englert, P. A. J., Koeberl, C.,
-    Bishop, J. L., Gibson, E. K. (2023) Accounting for Salt Dilution in the Chemical
-    Index of Alteration: Applications to Don Juan Basin, Antarctica, and Mars.
-    <em>54th Lunar and Planetary Science Conference</em>. Bibcode 2023LPICo2806.2418F.</div>
-  </div>
-
-  <div class="pub">
-    <span class="venue">GSA Connects · 2021 · Poster</span>
-    <div class="cite">Englert, P. A. J., Bishop, J. L., <strong>Foerder, A. B.</strong>,
-    Bailey, A., Burton, Z. F. M., Patel, S., Koeberl, C., Gibson, E. K. (2021)
-    Weathering and Chemical Alteration in Wright Valley, Antarctica, as an Analog for
-    Alteration on Mars. <em>Geological Society of America Connects</em>, paper 179-11.
-    <a href="https://doi.org/10.1130/abs/2021AM-364655">doi:10.1130/abs/2021AM-364655</a></div>
-  </div>
-
-  <div class="pub">
-    <span class="venue">LPSC 2020 · Abstract 2298 · Poster</span>
-    <div class="cite"><strong>Foerder, A. B.</strong>, Englert, P. A. J., Bishop, J. L.,
-    Koeberl, C., Gibson, E. K. (2020) Rare Earth Element Abundances and Chemical
-    Alteration in Microenvironments of the McMurdo Dry Valleys. <em>51st Lunar and
-    Planetary Science Conference</em>. Bibcode 2020LPI....51.2298F.</div>
-  </div>
-</div>
-</div>
+<section id="maintenance-notes" class="level1">
+<h1>Maintenance notes</h1>
+<p>Written 2026-08-20, right after launch, for whoever edits this next (probably me, months from now, having forgotten all of it).</p>
+<section id="making-a-change" class="level2">
+<h2 data-anchor-id="making-a-change">Making a change</h2>
+<p>Edit the <code>.qmd</code> or <code>.scss</code> files directly, then:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/site</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview          <span class="co"># check it locally</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>When it looks right:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/site</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> _site            <span class="co"># see "stale output" below — do not skip this</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">-A</span> <span class="kw">&amp;&amp;</span> <span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"what changed"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push                <span class="co"># the Action deploys automatically</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>quarto publish gh-pages</code> still works and does the same job manually. Either is fine; don’t do both for one change.</p>
+</section>
+<section id="two-traps-that-already-cost-real-time" class="level2">
+<h2 data-anchor-id="two-traps-that-already-cost-real-time">Two traps that already cost real time</h2>
+<p><strong>Stale output.</strong> <code>_site/</code> keeps files from previous renders. Deleting a page’s source does not delete the built HTML, and publish copies whatever is in <code>_site</code>. Four old draft pages went live this way. Always <code>rm -rf _site</code> before publishing when anything was renamed or removed.</p>
+<p><strong>Silent no-ops.</strong> A copy or edit that doesn’t land looks identical to one that did. Live placeholder text sat on the publications page for days because an update never got copied. After any batch of edits, grep for what should and shouldn’t be there:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="at">-rn</span> <span class="st">"REPLACE\|TODO\|FIXME"</span> <span class="pp">*</span>.qmd <span class="pp">*</span>.yml</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="numbers" class="level2">
+<h2 data-anchor-id="numbers">Numbers</h2>
+<p>Every number about the dust storm project comes from <code>~/Downloads/mars-dust-storm/LICENSED_NUMBERS.md</code> and nowhere else. Not from memory, not from a chat, not from an older version of this site. A retired figure reached both a slide and this site by traveling through conversation instead of the ledger. Numbers travel with their riders or they don’t travel.</p>
+<p>Verify with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/Downloads/mars-dust-storm</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">.venv/bin/python</span> src/step06_repro_extract.py <span class="at">--check-only</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="regenerating-figures" class="level2">
+<h2 data-anchor-id="regenerating-figures">Regenerating figures</h2>
+<p><code>tools/storm_figure.py</code> builds <code>images/predictability-gap.png</code> (projects page) and <code>tools/storm_card.py</code> builds <code>images/predictability-gap-card.png</code> (homepage card). Both need <code>tools/fonts/</code> — Space Grotesk and IBM Plex Mono, instanced from the Google Fonts variable font. Neither font has a sigma glyph, so the scripts register DejaVu Sans as a fallback for that one character.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~/site/tools <span class="kw">&amp;&amp;</span> <span class="ex">python3</span> storm_figure.py <span class="kw">&amp;&amp;</span> <span class="ex">python3</span> storm_card.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The other figures are crops of source images, not generated.</p>
+</section>
+<section id="decisions-that-are-deliberate-not-oversights" class="level2">
+<h2 data-anchor-id="decisions-that-are-deliberate-not-oversights">Decisions that are deliberate, not oversights</h2>
+<ul>
+<li><strong>The headline is broad on purpose.</strong> Earlier versions boxed me into Mars or into mapping work. Specificity was traded away knowingly.</li>
+<li><strong>No plain-language summaries under citations</strong> on the publications page.</li>
+<li><strong>Status labels are literal.</strong> Unpublished stays unpublished; the corpus run stays “scheduled” until it has run.</li>
+<li><strong>Limitations sit next to results,</strong> including the leakage bug and the tile-level split caveat. That pairing is what makes the honesty read as rigor rather than weakness.</li>
+<li><strong>No autoplay on the labeler video.</strong> The animated background already carries the page’s motion, and autoplay ignores reduced-motion preferences.</li>
+<li><strong>Code is withheld until publication.</strong> TYXN Labeler stays private until it runs on a machine other than mine.</li>
+<li><strong>Figures sit on white inside dark trim</strong> even though the page is warm off-white. That’s the print convention of a plate, and it keeps the evidence visually separate from the prose.</li>
+</ul>
+</section>
+<section id="css-gotchas-specific-to-this-site" class="level2">
+<h2 data-anchor-id="css-gotchas-specific-to-this-site">CSS gotchas specific to this site</h2>
+<ul>
+<li>Quarto applies a <strong>vertical margin to images</strong> (~22px). It makes any frame taller than its picture and shows as a band. Every figure rule carries <code>margin: 0 !important</code> because of it.</li>
+<li>Use <strong><code>outline</code> with <code>outline-offset: -1px</code></strong>, not <code>border</code>, for trim on images. Borders get clipped by the container; inset box-shadows paint <em>behind</em> an image and are invisible under opaque content.</li>
+<li>The pipeline stage frame has <strong>no aspect-ratio</strong>. The first image sits in normal flow and sets the height; the rest are absolutely positioned over it. Anything else produces letterboxing or cropping.</li>
+</ul>
+</section>
+<section id="things-left-undone-at-launch" class="level2">
+<h2 data-anchor-id="things-left-undone-at-launch">Things left undone at launch</h2>
+<ul>
+<li>GitHub profile README.</li>
+<li>Résumé says “deploy at survey scale” while the corpus run is only scheduled. Fix to “built and validated deployment for.”</li>
+<li>The paleobiology collaboration appears on the site but on neither PDF, so it can’t be verified.</li>
+<li>FINESST line on the CV says decision pending; update when it lands.</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
