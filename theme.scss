@@ -796,3 +796,15 @@ main.content {
 .band-pubs .meta {
   max-width: 54rem;
 }
+
+/* One photograph, sized as a band so it reads as texture rather than a snapshot */
+.aspens {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0.4rem 0 1.6rem !important;
+  outline: 1px solid #14181A;
+  outline-offset: -1px;
+}
