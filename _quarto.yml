@@ -6,11 +6,15 @@ project:
     - field.js
     - cv.pdf
     - resume.pdf
+    - CNAME
 
 website:
   title: "Andrew Foerder"
-  description: "Machine learning and computer vision for Earth and planetary remote sensing."
-  site-url: "https://REPLACE-WITH-YOUR-DOMAIN"
+  description: "Deep learning and computer vision for detection and classification in imagery, from the ground to orbit."
+  site-url: "https://andrewfoerder.com"
+  image: images/social-card.png
+  open-graph: true
+  twitter-card: true
   search: false
   navbar:
     title: false
