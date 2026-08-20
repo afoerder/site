@@ -227,7 +227,14 @@ main.content:has(.hero) { max-width: none; padding: 0 0 5rem 0; }
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
 
 .card { display: block; border-bottom: none !important; }
-.card-fig { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #000; }
+.card-fig {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #000;
+  border: 1px solid #14181A;
+}
 .card-status {
   display: inline-block;
   font-family: $font-family-monospace;
@@ -565,6 +572,7 @@ main.content {
   position: relative;
   width: 100%;
   background: #000;
+  border: 1px solid #14181A;
   aspect-ratio: 4 / 3;
   overflow: hidden;
 }
@@ -742,5 +750,15 @@ main.content {
 /* Charts must not be cropped the way photographs can be */
 .card-fig-contain {
   object-fit: contain;
+  background: #FFFFFF;
+  border: 1px solid #14181A;
+}
+
+/* Figures inside project entries carry the same trim as the cards */
+.entry > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #14181A;
   background: #FFFFFF;
 }
