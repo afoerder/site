@@ -715,9 +715,13 @@ main.content {
   /* Keep both halves on one line; shrink type slightly if the card is tight */
   font-size: clamp(0.82rem, 1.35vw, 1.05rem);
 }
-.card h3.split-head > span:first-child,
+.card h3.split-head > span:first-child {
+  text-align: left;
+  white-space: nowrap;
+  min-width: 0;
+}
 .card h3.split-head > span:last-child {
-  text-align: center;
+  text-align: right;
   white-space: nowrap;
   min-width: 0;
 }
