@@ -136,7 +136,7 @@ page-layout: full
     </div>
 
     <div class="card">
-      <img class="card-fig" src="images/predictability-budget.png" alt="">
+      <img class="card-fig" src="images/predictability-gap.png" alt="">
       <h3>Knowing a record's limit</h3>
       <p class="card-line">Can a Martian dust storm be predicted? Researchers have
       reported warning signs for decades, yet none has been shown to beat two

@@ -143,7 +143,7 @@ page-layout: full
     risk on Mars must, for now, rest on seasonal climatology, and any future forecast
     claim can be checked against the bar this work sets before anyone acts on it.</p>
 
-    <img src="images/predictability-budget.png" alt="Predictability budget in units of sigma">
+    <img src="images/predictability-gap.png" alt="Predictability budget in units of sigma">
 
     <p class="result">For this record and design, detecting a precursor at 80%
     power requires roughly 1.7 to 1.8σ. The largest season-controlled effect
