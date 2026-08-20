@@ -678,25 +678,32 @@ main.content {
 
 /* Full pipeline animation on the projects page */
 .entry-stage { margin: 1.3rem 0; }
+/* The first image sits in normal flow and sets the frame height exactly, so the
+   frame can never be taller than the picture. The rest stack on top of it. */
 .entry-stage .stage-frame {
   position: relative;
   width: 100%;
-  /* Stage images are square: a square frame fills exactly, no crop, no bars */
-  aspect-ratio: 1 / 1;
+  aspect-ratio: auto;
   background: #000;
   overflow: hidden;
   outline: 1px solid #14181A;
   outline-offset: -1px;
+  line-height: 0;
 }
 .entry-stage .stage-frame::before { content: none; }
 .entry-stage .stage-img {
-  position: absolute;
-  inset: 0;
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   opacity: 0;
   transition: opacity 0.55s ease;
+}
+.entry-stage .stage-img:not(:first-of-type) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
 }
 .entry-stage .stage-img.is-on { opacity: 1; }
 .entry-stage .stage-ticker {
