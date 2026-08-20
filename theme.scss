@@ -711,10 +711,16 @@ main.content {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: baseline;
-  column-gap: 0.4rem;
+  column-gap: 0.3rem;
+  /* Keep both halves on one line; shrink type slightly if the card is tight */
+  font-size: clamp(0.82rem, 1.35vw, 1.05rem);
 }
-.card h3.split-head > span:first-child { text-align: center; }
-.card h3.split-head > span:last-child  { text-align: center; }
+.card h3.split-head > span:first-child,
+.card h3.split-head > span:last-child {
+  text-align: center;
+  white-space: nowrap;
+  min-width: 0;
+}
 .card h3.split-head .sep {
   color: var(--miss-d);
   letter-spacing: 0.22em;
