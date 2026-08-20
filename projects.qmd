@@ -106,7 +106,12 @@ page-layout: full
     model what a landform looks like. Teaching it what that landform looks like on
     Mars is a separate problem.</p>
 
-    <!-- TODO: add a transfer-learning figure here as images/transfer.png -->
+    <img src="images/transfer-full.png" alt="Three Earth landform classes and the model predictions each produced on Mars">
+    <p class="figcaption">Top row: Earth imagery the models trained on, blue showing training labels.
+    Bottom row: Mars, never seen in training. Green marks agreement between model and expert, blue marks
+    expert labels the model missed, orange marks model predictions with no matching label. Earth imagery
+    &copy; CNES (2016), Distribution Airbus DS; &copy; Airbus DS (2024); &copy; 2010, 2018 Maxar Technologies.
+    Mars imagery NASA/JPL-Caltech/MSSS (CTX) and NASA/JPL-Caltech/UArizona (HiRISE).</p>
 
     <p class="result">Quantitative results withheld pending publication. For scale
     of the problem: on Earth alone, detection performance for polygonal terrain falls
