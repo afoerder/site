@@ -118,7 +118,7 @@ page-layout: full
       <h3>Martian paleoclimate by counting cracks</h3>
       <p class="card-line">The way cracks meet in frozen ground can record past
       climate conditions, but with over 100,000 orbital images to search, reading
-      them by hand is not an option. I built a deep learning pipeline that detects
+      them by hand is not an option. I built an AI vision pipeline that detects
       and classifies martian crack junctions, validated on a subset of HiRISE scenes
       and scaling next to the martian mid-latitudes.</p>
       <span class="card-status">Under review · scale-up in progress</span>
@@ -129,7 +129,7 @@ page-layout: full
       <h3 class="split-head">
         <span>Training on Earth</span><span class="sep">....</span><span>deploying on Mars</span>
       </h3>
-      <p class="card-line">Can a vision model trained only on Earth imagery find the
+      <p class="card-line">Can an AI vision model trained only on Earth imagery find the
       same landforms on Mars? I trained segmentation models on polygon-patterned
       tundra, ancient riverbeds preserved as ridges, and branching valley networks,
       then set them loose on Mars.</p>
@@ -152,7 +152,7 @@ page-layout: full
 
 
 
-<div class="band-narrow">
+<div class="band band-pubs">
   <div class="section-head">Selected publications</div>
 
   <div class="pub">

@@ -206,6 +206,8 @@ main.content:has(.hero) { max-width: none; padding: 0 0 5rem 0; }
 .band { max-width: 1160px; margin: 0 auto; padding: 4rem 2rem 0; }
 .band-narrow { max-width: 54rem; margin: 0 auto; padding: 3rem 2rem 0; }
 
+
+
 .section-head {
   display: flex;
   align-items: baseline;
@@ -770,4 +772,10 @@ main.content {
   outline: 1px solid #14181A;
   outline-offset: -1px;
   background: #FFFFFF;
+}
+
+/* Publications share the cards' left edge; only the citation text is narrowed */
+.band-pubs .pub,
+.band-pubs .meta {
+  max-width: 54rem;
 }
