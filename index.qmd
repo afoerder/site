@@ -11,7 +11,7 @@ page-layout: full
     <div class="hero-text">
     <div class="hero-id">
       <div class="hero-name">Andrew Foerder</div>
-      <div class="hero-role">PhD candidate, Earth &amp; Planetary Sciences</div>
+      <div class="hero-role">PhD candidate, Earth, Environmental &amp; Planetary Sciences</div>
     </div>
 
     <h1 class="hero-claim">Applying AI to help solve problems on Earth and Elsewhere</h1>
@@ -34,7 +34,7 @@ page-layout: full
 <div class="split split-lead">
 
   <div class="prose">
-    <p>I'm a PhD candidate in Earth and Planetary Sciences at the University of
+    <p>I'm a PhD candidate in Earth, Environmental, and Planetary Sciences at the University of
     Tennessee, Knoxville, working with Dr. Bradley J. Thomson and defending in
     Spring 2027. After that, I'm looking for applied and research scientist roles in
     Earth observation, geospatial machine learning, and AI for science.</p>
@@ -77,11 +77,11 @@ page-layout: full
   <div class="rail">
     <h4>Education</h4>
     <ul>
-      <li>Ph.D. Earth, Environmental, and Planetary Sciences<br>
+      <li>Ph.D. Earth, Environmental &amp; Planetary Sciences<br>
         <span class="sub">University of Tennessee, Knoxville · 2027 (expected)</span></li>
-      <li>M.S. Planetary Geology<br>
+      <li>M.Sc. Earth &amp; Planetary Sciences<br>
         <span class="sub">University of Hawai'i at Mānoa · 2020</span></li>
-      <li>B.S. Geology-Biology<br>
+      <li>B.A. Geology-Biology<br>
         <span class="sub">Brown University · 2018</span></li>
     </ul>
 
@@ -130,13 +130,14 @@ page-layout: full
         <span>Training on Earth</span><span class="sep">....</span><span>deploying on Mars</span>
       </h3>
       <p class="card-line">Can a vision model trained only on Earth imagery find the
-      same landforms on Mars? I trained segmentation models on arctic tundra polygons,
-      inverted channels, and valley networks, then tested them on Mars.</p>
+      same landforms on Mars? I trained segmentation models on polygon-patterned
+      tundra, ancient riverbeds preserved as ridges, and branching valley networks,
+      then set them loose on Mars.</p>
       <span class="card-status">Results in preparation</span>
     </div>
 
     <div class="card">
-      <img class="card-fig" src="images/predictability-gap.png" alt="">
+      <img class="card-fig card-fig-contain" src="images/predictability-gap-card.png" alt="Effect-size axis showing the measured signal falling short of the detection floor">
       <h3>Knowing a record's limit</h3>
       <p class="card-line">Can a Martian dust storm be predicted? Researchers have
       reported warning signs for decades, yet none has been shown to beat two

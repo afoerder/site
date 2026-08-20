@@ -738,3 +738,9 @@ main.content {
   .card h3.split-head > span { text-align: left; }
   .card h3.split-head .sep { display: none; }
 }
+
+/* Charts must not be cropped the way photographs can be */
+.card-fig-contain {
+  object-fit: contain;
+  background: #FFFFFF;
+}
