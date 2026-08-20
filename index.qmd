@@ -14,10 +14,10 @@ page-layout: full
       <div class="hero-role">Machine learning · Earth and planetary remote sensing</div>
     </div>
 
-    <h1 class="hero-claim">I measure what’s too big to map by hand.</h1>
+    <h1 class="hero-claim">Applying AI to help solve problems on Earth and Elsewhere</h1>
 
-    <p class="hero-lede">Computer vision for detection and measurement in orbital
-    imagery, where the labels do not exist yet.</p>
+    <p class="hero-lede">Raw archive to measured result: deep learning and computer
+    vision for detection and classification in imagery, from the ground to orbit.</p>
 
 
     </div>
