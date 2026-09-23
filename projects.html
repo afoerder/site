@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-5ece0e4a5ffbf02e28d4d657a8c77456.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-52b7960052ce55c8a86735ca5ed4f228.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-fad18052d2117fb8de595fb30541d80e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -138,21 +138,22 @@ ul.task-list li input[type="checkbox"] {
   <div class="entry">
     <h3>Martian paleoclimate by counting cracks</h3>
     <p>Frozen ground on Mars cracks into polygons much as it does on Earth, and the
-    way those cracks meet is a record of what the climate did. A crack that stops
-    against another says the ground cracked once, in sequence. Three cracks meeting
-    symmetrically say it froze and thawed repeatedly. Cracks that run straight
-    through each other say ice filled the older fractures before new ones opened.</p>
+    way those cracks meet can record what the climate did. A crack that stops
+    against another suggests the ground cracked in sequence, without repeated
+    freezing and thawing. Three cracks meeting symmetrically suggest it froze and
+    thawed repeatedly. Cracks that run straight through each other suggest ice
+    filled the older fractures before new ones opened.</p>
 
     <p>Mars has more than 100,000 orbital images. Junction types have been surveyed
     by hand exactly once. I built a pipeline that finds these junctions and
-    classifies them, labeling 84% correctly overall and 75% when the four types are
-    weighted equally, since the rarer types are the hard ones. It needs as few as 25
+    classifies them, labeling 84% correctly overall and 75% when the three junction types
+    and the non-junction class are weighted equally, since the rarer types are the hard ones. It needs as few as 25
     to 50 junctions to tell one terrain from another.</p>
 
     <p>On 19 images of western Utopia Planitia, Mars, the junction mix shifts with
     latitude as predicted, and aligns with an independent ice-stability proxy also
-    used for paleoclimate interpretation. This is a climate signal recovered at a
-    scale hand-mapping cannot realistically reach.</p>
+    used for paleoclimate interpretation. The pipeline recovers that signal at a scale
+    impractical for manual surveys.</p>
 
     <p>A planet's worth of imagery is far too much to download, so the pipeline
     reads only the small piece of each image it needs, directly from the archive,
@@ -178,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
 
     <p>Training the classifier meant labeling junctions by hand, one at a time, so I
     built a tool for it: the skeleton for context, the crosshair on the node in
-    question, four keys for the four types, and a running count of what was left.</p>
+    question, four keys for the four classes, and a running count of what was left.</p>
 
     <video class="demo" controls="" preload="none" playsinline="" poster="images/labeler-poster.jpg">
       <source src="images/labeler.mp4" type="video/mp4">
@@ -188,8 +189,8 @@ ul.task-list li input[type="checkbox"] {
     junction training set. Code released with the paper.</p>
 
     <p class="caveat">The classification method and pilot deployment are under
-    review at JGR: Machine Learning and Computation, submitted April 2026, not yet
-    accepted. The planet-scale deployment is in preparation. Train and test splits
+    review at JGR: Machine Learning and Computation (first submitted April 2026,
+    resubmitted July 2026), not yet accepted. The planet-scale deployment is in preparation. Train and test splits
     for the detector are made at the tile level, so adjacent tiles from the same
     image can appear in both, and its performance should be read as an upper bound
     on generalization to unseen scenes. An earlier version of the classifier had a
@@ -260,33 +261,38 @@ ul.task-list li input[type="checkbox"] {
 
     <p>It does not. Mars has produced only about a dozen independent major storms
     since continuous observation began, far too few to tell a working forecast from a
-    lucky one. The more tractable question, and the one I am testing now, is whether
-    a storm already underway can be predicted to keep growing.</p>
+    lucky one. Instead, what the record can support is more modest: predicting whether a
+    storm already underway will continue to grow.</p>
 
     <p>For mission planners this turns an open question into a concrete number. Storm
     risk on Mars must, for now, rest on seasonal climatology, and any future forecast
     claim can be checked against the bar this work sets before anyone acts on it.</p>
 
-    <img src="images/predictability-gap.png" alt="Effect-size axis in sigma showing the largest measured effect at 0.32 with a 95% upper limit of 0.80, an association floor of 0.59 to 0.81, and an 80%-power detection floor of 1.7 to 1.8">
+    <img src="images/predictability-gap.png" alt="Effect-size axis in sigma showing the largest season-controlled effect at 0.32 with a one-sided 95% upper limit of 0.80, an association floor of 0.59 to 0.81, and an 80%-power detection floor of 1.7 to 1.8 or more">
     <p class="figcaption">The measured signal falls short of the bar it would have to clear.
     Point and whisker: largest season-controlled effect measured, with its one-sided 95% upper
-    limit. Bands: the effect size this record and design would need to establish an association,
-    and to detect a precursor at 80% power. Closing the gap by observation would take at least
-    222 to 315 Mars years; the usable record spans about 6.6.</p>
+    limit. Bands: the effect size this record would need to establish an association, and this
+    design would need to detect a precursor at 80% power. Even at the larger, season-uncontrolled
+    effect (0.56σ), closing the gap by observation would take at least 222 to 315 Mars years;
+    the usable record spans about 6.6.</p>
 
     <p class="result">For this record and design, detecting a precursor at 80%
     power requires roughly 1.7σ, or 1.8σ and above once storm clustering is
     counted. The largest season-controlled effect measured is 0.32σ, with a
-    one-sided 95% upper limit of 0.80σ. Closing that gap by observation would
-    take at least 222 to 315 Mars years, and roughly double that once
-    clustering is counted; the usable record spans about 6.6.</p>
+    one-sided 95% upper limit of 0.80σ. Even at the larger, season-uncontrolled
+    effect (0.56σ), closing that gap by observation would take at least 222 to
+    315 Mars years, roughly double that once clustering is counted, and about
+    four times more at the season-controlled effect; the usable record spans
+    about 6.6. Merely detecting the association, at a season-controlled effect,
+    would take roughly 30 to 55 Mars years.</p>
 
     <p class="caveat">This is a predictability assessment and not a forecasting
-    system. Methods and decision thresholds were committed to version control before
-    each run, so the commit history is the record that nothing was decided after
-    seeing results. One run was killed mid-flight when a check caught rows reading
-    atmospheric data from after the event being predicted; no result was read before
-    the fix, so the added robustness tests are provably not after the fact. Every floor statement is scoped to its design. The nulls exclude
+    system. Since the project moved to version control on August 3, 2026, methods and
+    decision thresholds were committed before each run, so for those runs the
+    commit history is the record that nothing was decided after seeing results. One run was killed mid-flight when a check caught rows reading
+    atmospheric data from up to about an hour after the forecast was made; no result was read before
+    the fix, so the added robustness tests are provably not after the fact. The 80%-power floor is specific to this design; the association floor is a
+    property of the record. The nulls exclude
     effects large enough to support prediction for the features and estimands
     tested; they are not evidence that precursors do not exist.</p>
 
