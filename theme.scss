@@ -764,10 +764,11 @@ main.content {
 }
 .card h3.split-head .sep {
   color: var(--miss-d);
-  letter-spacing: 0.22em;
-  font-weight: 400;
-  position: relative;
-  top: -0.1em;
+  line-height: 1;
+}
+.card h3.split-head .sep svg {
+  display: inline-block;
+  vertical-align: -0.12em;
 }
 
 @media (max-width: 640px) {

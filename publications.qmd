@@ -24,8 +24,7 @@ page-layout: full
   <div class="pub">
     <span class="venue">Under review · JGR Machine Learning and Computation</span>
     <div class="cite"><strong>Foerder, A. B.</strong>, Magocs, B. L., Thomson, B. J.,
-    and Bhidya, H. Toward paleoclimate mapping on Mars by detecting and classifying
-    fracture junctions with machine learning.</div>
+    and Bhidya, H. Toward planet-wide paleoclimate mapping on Mars by detecting and classifying fracture junctions with deep learning.</div>
   </div>
 
   <div class="pub">

@@ -10,7 +10,7 @@ Three things that matter most:
 1. **`rm -rf _site` before publishing.** Stale build output has put deleted
    draft pages on the live site.
 2. **Numbers about the dust storm project come only from
-   `~/Downloads/mars-dust-storm/LICENSED_NUMBERS.md`.** Not from memory,
+   `~/research/LICENSED_NUMBERS.md`.** Not from memory,
    not from a conversation, not from an older version of the site. A
    retired figure reached the live site by traveling through chat.
 3. **Don't "fix" the deliberate choices.** The broad headline, the withheld

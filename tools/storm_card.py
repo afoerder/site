@@ -27,7 +27,7 @@ ax.plot([0.80, 0.80], [Y_D - 0.5, Y_M + 0.5], color=FAINT, lw=1.2,
 ax.plot([0.32, 0.80], [Y_M, Y_M], color=GREEN_D, lw=4.0, solid_capstyle="butt", zorder=4)
 ax.plot([0.32], [Y_M], marker="o", ms=13, color=GREEN_D, zorder=5)
 ax.plot([0.80], [Y_M], marker="|", ms=18, mew=3.4, color=GREEN_D, zorder=5)
-ax.text(0.32, Y_M + 0.34, "measured", color=INK, fontsize=17,
+ax.text(0.32, Y_M + 0.34, "measured, season-controlled", color=INK, fontsize=17,
         va="bottom", ha="left", family=GRO, fontweight="bold")
 
 ax.add_patch(Rectangle((0.59, Y_A - BH/2), 0.22, BH, facecolor=ORANGE,
@@ -42,7 +42,7 @@ ax.text(1.80, Y_D + 0.34, "to predict", color=INK, fontsize=17,
 
 ax.text(1.25, 2.86, "the gap", color=GREY, fontsize=16, ha="center",
         va="center", family=GRO, style="italic")
-ax.text(1.25, -0.55, "at least 222\u2013315 Mars years\nof observation would close it.\nThe record spans ~6.6.",
+ax.text(1.25, -0.55, "at least 222\u2013315 Mars years at the raw\neffect, ~4\u00d7 more season-controlled.\nThe record spans ~6.6.",
         color=INK, fontsize=13.5, ha="center", va="center",
         family=GRO, fontweight="bold", linespacing=1.5)
 

@@ -1,7 +1,7 @@
 """
 Predictability-gap figure, v3 — site-native styling.
-Numbers unchanged from the published result text:
-    measured 0.32 sigma; one-sided 95% upper limit 0.80
+Numbers from ~/research/LICENSED_NUMBERS.md:
+    largest season-controlled 0.32 sigma; one-sided 95% upper limit 0.80
     association floor 0.59-0.81; detection floor (80% power) 1.7-1.8
 Site palette: green #3FD07C, orange #E08A32, ink #14181A, cream #F4F1E9.
 Fonts: Space Grotesk (labels), IBM Plex Mono (numbers/axis) — the site's own.
@@ -36,7 +36,7 @@ ax.axvspan(0.80, 1.70, color=CREAM, zorder=0)
 ax.text(1.25, 2.72, "the gap between what the record shows\nand what prediction would require",
         color=GREY, fontsize=10.5, ha="center", va="center",
         family=GRO, style="italic")
-ax.text(1.25, -0.62, "Closing it: at least\n222\u2013315 Mars years of observation.\nThe record spans ~6.6.",
+ax.text(1.25, -0.62, "Closing it: at least 222\u2013315 Mars years\neven at the raw 0.56\u03c3 effect; ~4\u00d7 more\nseason-controlled. The record spans ~6.6.",
         color=INK, fontsize=10.5, ha="center", va="center",
         family=GRO, fontweight="bold", linespacing=1.45)
 
@@ -48,11 +48,11 @@ ax.plot([0.80, 0.80], [Y_D - 0.50, Y_M + 0.45], color=FAINT, lw=1.0,
 ax.plot([0.32, 0.80], [Y_M, Y_M], color=GREEN_D, lw=2.6, solid_capstyle="butt", zorder=4)
 ax.plot([0.32], [Y_M], marker="o", ms=10, color=GREEN_D, zorder=5)
 ax.plot([0.80], [Y_M], marker="|", ms=14, mew=2.6, color=GREEN_D, zorder=5)
-ax.text(0.56, Y_M + 0.30, "Largest measured effect", color=INK, fontsize=11.5,
+ax.text(0.56, Y_M + 0.30, "Largest season-controlled effect", color=INK, fontsize=11.5,
         va="bottom", ha="center", family=GRO, fontweight="bold")
 ax.text(0.32, Y_M - 0.32, "0.32\u03c3", color=GREEN_D, fontsize=11.5, va="top",
         ha="center", family=MONO, fontweight="medium")
-ax.text(0.86, Y_M - 0.30, "0.80\u03c3 \u00b7 95% limit", color=GREY, fontsize=9.5,
+ax.text(0.86, Y_M - 0.30, "0.80\u03c3 \u00b7 one-sided 95% limit", color=GREY, fontsize=9.5,
         va="top", ha="left", family=MONO)
 
 # --- floors (site orange: the requirement) ------------------------------

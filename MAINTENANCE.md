@@ -43,7 +43,7 @@ grep -rn "REPLACE\|TODO\|FIXME" *.qmd *.yml
 ## Numbers
 
 Every number about the dust storm project comes from
-`~/Downloads/mars-dust-storm/LICENSED_NUMBERS.md` and nowhere else. Not
+`~/research/LICENSED_NUMBERS.md` and nowhere else. Not
 from memory, not from a chat, not from an older version of this site. A
 retired figure reached both a slide and this site by traveling through
 conversation instead of the ledger. Numbers travel with their riders or
