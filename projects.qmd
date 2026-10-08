@@ -149,8 +149,7 @@ page-layout: full
 
     <p>It does not. Mars has produced only about a dozen independent major storms
     since continuous observation began, far too few to tell a working forecast from a
-    lucky one. Instead, what the record can support is more modest: predicting whether a
-    storm already underway will continue to grow.</p>
+    lucky one.</p>
 
     <p>For mission planners this turns an open question into a concrete number. Storm
     risk on Mars must, for now, rest on seasonal climatology, and any future forecast
